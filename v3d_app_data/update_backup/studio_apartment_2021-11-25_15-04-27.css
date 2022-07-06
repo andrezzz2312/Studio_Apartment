@@ -1,0 +1,224 @@
+/* __V3D_TEMPLATE__ - template-based file; delete this line to prevent this file from being updated */
+
+body {
+    margin: 0px;
+    overflow: hidden;
+}
+
+#v3d-container {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.fullscreen-button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    background-size: 100% 100%;
+    display: none;
+    z-index: 1;
+}
+
+.fullscreen-open {
+    background-image: url('media/fullscreen_open.svg');
+}
+
+.fullscreen-close {
+    background-image: url('media/fullscreen_close.svg');
+}
+
+/* removes tap blinking on ios devices */
+* { -webkit-tap-highlight-color:rgba(0,0,0,0); }
+
+/* Dark Theme */
+
+.v3d-simple-preloader-background {
+    background-color: #181818;
+}
+
+.v3d-simple-preloader-container {
+    filter: drop-shadow(0px 0px 4px #2a69bd);
+} 
+/*estilo de menu mueble*/ 
+/* Dropdown Button */ 
+.opcionesbtn{ 
+  background-color: #0f0e0e;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none; 
+}
+.dropbtn {
+    background-color: #0ec5dd;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none; 
+    width: 205px;
+  }
+  .pisobtn{ 
+    background-color: #0ec5dd;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;  
+    width: 205px;
+  }  
+  .anaquelbtn{ 
+    background-color: #0ec5dd;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;  
+    width: 205px;
+  } 
+  .ocultarbtn{ 
+    background-color: #0f0e0e;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;  
+    width: 205px;
+  }
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block; 
+   
+  }
+  .piso{  
+    position: relative;
+    display: inline-block; 
+    
+  } 
+  .ocultar{  
+    position: relative;
+    display: inline-block; 
+   
+  } 
+  .anaquel{  
+    position: relative;
+    display: inline-block; 
+    
+  } 
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+   display: none;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  .piso-content{ 
+    display: none;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  } 
+  .anaquel-content{ 
+    display: none;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  .piso-content a{ 
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  } 
+  .anaquel-content a{ 
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  /* Change color of dropdown links on hover */
+  .dropdown-content div:hover {opacity: 0.3;}
+  .piso-content  div:hover {opacity: 0.3;} 
+  .anaquel-content  div:hover {opacity: 0.3;}
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: flex; align-items: flex-start;}
+  .piso:hover .piso-content {display: flex; align-items: flex-start;} 
+  .anaquel:hover .anaquel-content {display: flex; align-items: flex-start;}
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {background-color: rgb(6, 119, 153);}
+  .piso:hover .pisobtn {background-color: rgb(6, 119, 153);} 
+  .anaquel:hover .anaquelbtn {background-color: rgb(6, 119, 153);}
+  .contenedor_personalizar{ 
+    width: 210px; 
+    height: 260px; 
+    background-color: rgb(165, 180, 180); 
+  opacity: 0.9; 
+  margin-left: 100px; 
+  margin-top: 50px;
+  }
+  .piso1{ 
+    width: 50px; 
+    height: 50px;  
+    border: 10px solid black; 
+    background-image: url("uisuejgl_2K_Albedo.jpg");
+  } 
+  .piso2{ 
+    width: 50px; 
+    height: 50px;  
+    border: 10px solid black; 
+    background-image: url("udlxbgtl_2K_Albedo.jpg");
+  } 
+  .piso3{ 
+    width: 50px; 
+    height: 50px;  
+    border: 10px solid black; 
+    background-image: url("vetldicv_2K_Albedo.jpg");
+  } 
+   .color1{ 
+       width: 50px; 
+       height: 50px; 
+       background-color: #2a69bd; 
+       border: 10px solid black;
+   } 
+   .color2{ 
+    width: 50px; 
+    height: 50px; 
+    background-color:#81C479; 
+    border: 10px solid black; 
+   } 
+   .color3{ 
+    width: 50px; 
+    height: 50px; 
+    background-color: whitesmoke; 
+    border: 10px solid black;
+   } 
+   .shelve1{ 
+    width: 50px; 
+    height: 50px;  
+    border: 10px solid black; 
+    background-image: url("T_Anaquel_Salmon.jpg");
+   } 
+   .shelve2{ 
+    width: 50px; 
+    height: 50px;  
+    border: 10px solid black; 
+    background-image: url("T_Anaquel_Black.jpg");
+   }  
+   .shelve3{ 
+    width: 50px; 
+    height: 50px;  
+    border: 10px solid black; 
+    background-image: url("T_Anaquel_Brown.jpg");
+   } 

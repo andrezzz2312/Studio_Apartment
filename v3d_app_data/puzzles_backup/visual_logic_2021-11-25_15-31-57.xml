@@ -1,0 +1,1005 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <tab name="init" type="InitTab" active="false" scrollx="939" scrolly="483.00000000000057" scale="0.9">
+    <block xmlns="https://developers.google.com/blockly/xml" type="initSettings" id="D0}}rrO,T:,A|~!RC7c;" x="-930" y="-290">
+      <field name="LOAD_COMP_ASSETS">TRUE</field>
+      <field name="FULLSCREEN">TRUE</field>
+      <field name="BKG_TRANSPARENCY">FALSE</field>
+      <field name="PRESERVE_DRAW_BUF">FALSE</field>
+      <field name="FADE_ANNOTATIONS">TRUE</field>
+    </block>
+  </tab>
+  <tab name="main" type="MainTab" active="true" scrollx="2054.724348961224" scrolly="-94.49500111162752" scale="0.7768060272013859">
+    <variables xmlns="https://developers.google.com/blockly/xml">
+      <variable id="9?_Qmgf^gPK-^TG|c:YS" type="">sofa</variable>
+      <variable id="}HO~VKCiCkWZ[YeWJ0gL" type="">shel_1</variable>
+      <variable id="Hd=iV@X5q`#=|?MUt?be" type="">piso</variable>
+      <variable id="mL*,LeScZv~k?/!uI}3y" type="">shel_2</variable>
+      <variable id="JN|F[r/TL/SF.]=3MQZv" type="">piso_1</variable>
+      <variable id="1]O-/Q*K@Qxa-thh%hcM" type="">interseccion</variable>
+      <variable id="qP%6s|+Uid(@%6Ac,Q3l" type="">shel_3</variable>
+      <variable id="`:|ORJl29;@bNso]Xd7C" type="">piso_2</variable>
+      <variable id="49J-)/cL_09Vhh6?+p.E" type="">piso_3</variable>
+      <variable id="*~^$MPt!EA]03c=M3+S!" type="">posicion</variable>
+      <variable id="DwZ+3Nc,i(=fq,hFF2A@" type="">sofa_1</variable>
+      <variable id="=RzhF`vdc}pQ2nUGy(hW" type="">sofa_2</variable>
+      <variable id="n8uGkW,mzF!?J~9M~X{-" type="">sofa_3</variable>
+    </variables>
+    <block xmlns="https://developers.google.com/blockly/xml" type="removePostprocessing" id="9w{4P;HWs:Xh[;+%ki(8" x="-950" y="-510"/>
+    <block xmlns="https://developers.google.com/blockly/xml" type="variables_set" id="|ROw_fYcq4t3)Tr2q5s%" x="-890" y="-450">
+      <field name="VAR" id="9?_Qmgf^gPK-^TG|c:YS">sofa</field>
+      <value name="VALUE">
+        <block type="logic_boolean" id="Ilv6bv{CZylosbHc/en]">
+          <field name="BOOL">TRUE</field>
+        </block>
+      </value>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="variables_set" id="(jqS+n:XyW_ieAN045wO" x="-910" y="-370">
+      <field name="VAR" id="}HO~VKCiCkWZ[YeWJ0gL">shel_1</field>
+      <value name="VALUE">
+        <block type="querySelector" id="Ej![IKp`g;?yJvZht|=E">
+          <value name="QUERY">
+            <shadow type="text" id="`0,$@LOI+E+6`G:%+asY">
+              <field name="TEXT">.shelve1</field>
+            </shadow>
+          </value>
+        </block>
+      </value>
+      <next>
+        <block type="variables_set" id="Q3bd.-xQu@k+%$^NYP}v">
+          <field name="VAR" id="mL*,LeScZv~k?/!uI}3y">shel_2</field>
+          <value name="VALUE">
+            <block type="querySelector" id="r}hX`_H[${p6WI^yP@ZU">
+              <value name="QUERY">
+                <shadow type="text" id="U/%lAdB.q%(}Aj~2N5;Q">
+                  <field name="TEXT">.shelve2</field>
+                </shadow>
+              </value>
+            </block>
+          </value>
+          <next>
+            <block type="variables_set" id="[kr/d*w|9NiyH}%H%i0Z">
+              <field name="VAR" id="qP%6s|+Uid(@%6Ac,Q3l">shel_3</field>
+              <value name="VALUE">
+                <block type="querySelector" id="nw+[qLoi41Mkd$={!0sY">
+                  <value name="QUERY">
+                    <shadow type="text" id="ca_9^*zs;V]0(]NzVV3t">
+                      <field name="TEXT">.shelve3</field>
+                    </shadow>
+                  </value>
+                </block>
+              </value>
+              <next>
+                <block type="variables_set" id=".g)5-wTSlmQ7WgD3G9%z">
+                  <field name="VAR" id="JN|F[r/TL/SF.]=3MQZv">piso_1</field>
+                  <value name="VALUE">
+                    <block type="querySelector" id="s$LNIC)]72Usly7O/Rg}">
+                      <value name="QUERY">
+                        <shadow type="text" id="60MUn_)#L/_,dN_J$z2+">
+                          <field name="TEXT">.piso1</field>
+                        </shadow>
+                      </value>
+                    </block>
+                  </value>
+                  <next>
+                    <block type="variables_set" id="F)NlEr$1#sNlf$33@t,(">
+                      <field name="VAR" id="`:|ORJl29;@bNso]Xd7C">piso_2</field>
+                      <value name="VALUE">
+                        <block type="querySelector" id="2mpzs;Hz)Yb-@2MP*dY1">
+                          <value name="QUERY">
+                            <shadow type="text" id="y@ZVu^2c($T@Ns-8^4M`">
+                              <field name="TEXT">.piso2</field>
+                            </shadow>
+                          </value>
+                        </block>
+                      </value>
+                      <next>
+                        <block type="variables_set" id="loMZ,i,p:]#@3*Q{?ns~">
+                          <field name="VAR" id="49J-)/cL_09Vhh6?+p.E">piso_3</field>
+                          <value name="VALUE">
+                            <block type="querySelector" id="#X~K?mxLcsf;e7Ug:}es">
+                              <value name="QUERY">
+                                <shadow type="text" id="{zpC5s?a;gF;UOv3,0@9">
+                                  <field name="TEXT">.piso3</field>
+                                </shadow>
+                              </value>
+                            </block>
+                          </value>
+                          <next>
+                            <block type="variables_set" id=";65V;%^}#k;3,F8zLoKg">
+                              <field name="VAR" id="DwZ+3Nc,i(=fq,hFF2A@">sofa_1</field>
+                              <value name="VALUE">
+                                <block type="querySelector" id="k6GQ/*^}5$Sf#uk:U;tE">
+                                  <value name="QUERY">
+                                    <shadow type="text" id="~lhZh~~H*nA||*${lb={">
+                                      <field name="TEXT">.color1</field>
+                                    </shadow>
+                                  </value>
+                                </block>
+                              </value>
+                              <next>
+                                <block type="variables_set" id="#Zhx{ayxuzzwBcGQVOc%">
+                                  <field name="VAR" id="=RzhF`vdc}pQ2nUGy(hW">sofa_2</field>
+                                  <value name="VALUE">
+                                    <block type="querySelector" id="YKo5Ajc$pq)W;#=pIf@v">
+                                      <value name="QUERY">
+                                        <shadow type="text" id="[3)E:D%vV}KLBu77.PV?">
+                                          <field name="TEXT">.color2</field>
+                                        </shadow>
+                                      </value>
+                                    </block>
+                                  </value>
+                                  <next>
+                                    <block type="variables_set" id="X6|^Wsp)uYEF9KpOm%e7">
+                                      <field name="VAR" id="n8uGkW,mzF!?J~9M~X{-">sofa_3</field>
+                                      <value name="VALUE">
+                                        <block type="querySelector" id="{HIsbUAQp||/,C,#_TnZ">
+                                          <value name="QUERY">
+                                            <shadow type="text" id="ev-Lhh7+=wyIa|S#Qqo,">
+                                              <field name="TEXT">.color3</field>
+                                            </shadow>
+                                          </value>
+                                        </block>
+                                      </value>
+                                      <next>
+                                        <block type="eventHTMLElem" id="gqh_{OmvU1:TwzCf=-Me">
+                                          <field name="EVENT">click</field>
+                                          <field name="PARENT">TRUE</field>
+                                          <value name="ID">
+                                            <shadow type="text" id="=~ys*%ckAF$Q8vSlR~d^">
+                                              <field name="TEXT"/>
+                                            </shadow>
+                                            <block type="variables_get" id="lI5){R{?q;fE5RlwY#t3">
+                                              <field name="VAR" id="DwZ+3Nc,i(=fq,hFF2A@">sofa_1</field>
+                                            </block>
+                                          </value>
+                                          <statement name="DO">
+                                            <block type="replaceTexture" id="w]9#uXNU~EaTaNhWnGj~">
+                                              <mutation xmlns="http://www.w3.org/1999/xhtml" enabledoslot="false" flextexinput="false"></mutation>
+                                              <field name="OLD_TEX_NAME">T_Sofa_White.jpg</field>
+                                              <value name="MATERIAL">
+                                                <shadow type="materialList" id="rt4qvc2})bTn*b!7jhWV">
+                                                  <field name="FIELDNAME">M_SofaWhite</field>
+                                                </shadow>
+                                              </value>
+                                              <value name="NEW_TEX_URL">
+                                                <shadow type="text" id="uVTnVgcCm1}B=R_P-xl/">
+                                                  <field name="TEXT">./T_Sofa_Blue.jpg</field>
+                                                </shadow>
+                                              </value>
+                                              <next>
+                                                <block type="variables_set" id="r~|c}}YWj5eeo;ZL7Pe6">
+                                                  <field name="VAR" id="Hd=iV@X5q`#=|?MUt?be">piso</field>
+                                                  <value name="VALUE">
+                                                    <block type="logic_boolean" id="+o3mOu]vJBF]voRl`#gz">
+                                                      <field name="BOOL">TRUE</field>
+                                                    </block>
+                                                  </value>
+                                                  <next>
+                                                    <block type="controls_if" id="2:%R/u02?yo+bH*?sTVZ">
+                                                      <mutation else="1"/>
+                                                      <value name="IF0">
+                                                        <block type="variables_get" id="2o*`B]LjKS}o9)Xz_BfN">
+                                                          <field name="VAR" id="9?_Qmgf^gPK-^TG|c:YS">sofa</field>
+                                                        </block>
+                                                      </value>
+                                                      <statement name="DO0">
+                                                        <block type="zoomCameraToObject" id="e3?h$+MgKr$%=PaqQ=0!">
+                                                          <mutation xmlns="http://www.w3.org/1999/xhtml" whenfinishedslot="true"></mutation>
+                                                          <value name="OBJECT">
+                                                            <shadow type="objectList" id="?@T4MC_EBs%:@]U3!de0">
+                                                              <field name="FIELDNAME">SM_Sofa</field>
+                                                            </shadow>
+                                                          </value>
+                                                          <value name="DURATION">
+                                                            <shadow type="math_number" id="W)#cMrRF~[BFCQb@SR#i">
+                                                              <field name="NUM">1</field>
+                                                            </shadow>
+                                                          </value>
+                                                          <statement name="DO">
+                                                            <block type="lookAt" id="Ji;v.k*P[`q[I=aG;j*u">
+                                                              <value name="LOOKAT">
+                                                                <shadow type="objectList" id="!#u@!g5;D(Z*;DEGg^/`">
+                                                                  <field name="FIELDNAME">SM_Sofa</field>
+                                                                </shadow>
+                                                              </value>
+                                                              <value name="DURATION">
+                                                                <shadow type="math_number" id="%pw^P(NVdg]x@Jlh{/R{">
+                                                                  <field name="NUM">1</field>
+                                                                </shadow>
+                                                              </value>
+                                                            </block>
+                                                          </statement>
+                                                          <next>
+                                                            <block type="variables_set" id="P/#!Q;gFm)VJ_0MKF~hA">
+                                                              <field name="VAR" id="9?_Qmgf^gPK-^TG|c:YS">sofa</field>
+                                                              <value name="VALUE">
+                                                                <block type="logic_boolean" id="oDc.s-,II.8*/}l:7:0R">
+                                                                  <field name="BOOL">FALSE</field>
+                                                                </block>
+                                                              </value>
+                                                            </block>
+                                                          </next>
+                                                        </block>
+                                                      </statement>
+                                                      <statement name="ELSE">
+                                                        <block type="variables_set" id="~9P+M*Z1PiZr].vGqJky">
+                                                          <field name="VAR" id="9?_Qmgf^gPK-^TG|c:YS">sofa</field>
+                                                          <value name="VALUE">
+                                                            <block type="logic_boolean" id="`*aTslKNx:lV5CEyV82^">
+                                                              <field name="BOOL">FALSE</field>
+                                                            </block>
+                                                          </value>
+                                                        </block>
+                                                      </statement>
+                                                    </block>
+                                                  </next>
+                                                </block>
+                                              </next>
+                                            </block>
+                                          </statement>
+                                          <next>
+                                            <block type="eventHTMLElem" id="pPEBcs]PD-O5IdzJ|Z,7">
+                                              <field name="EVENT">click</field>
+                                              <field name="PARENT">TRUE</field>
+                                              <value name="ID">
+                                                <shadow type="text" id="bRHIsjHw4^Jsw`.s^y9q">
+                                                  <field name="TEXT"/>
+                                                </shadow>
+                                                <block type="variables_get" id="KJh:3[rkzWtw%wXZNg3V">
+                                                  <field name="VAR" id="=RzhF`vdc}pQ2nUGy(hW">sofa_2</field>
+                                                </block>
+                                              </value>
+                                              <statement name="DO">
+                                                <block type="replaceTexture" id="=WBcO:AjJn+;Qw,w5pnW">
+                                                  <mutation xmlns="http://www.w3.org/1999/xhtml" enabledoslot="false" flextexinput="false"></mutation>
+                                                  <field name="OLD_TEX_NAME">T_Sofa_White.jpg</field>
+                                                  <value name="MATERIAL">
+                                                    <shadow type="materialList" id="sM`(ceqqQfFdyNf$^XAM">
+                                                      <field name="FIELDNAME">M_SofaWhite</field>
+                                                    </shadow>
+                                                  </value>
+                                                  <value name="NEW_TEX_URL">
+                                                    <shadow type="text" id="$z2KKGO`3Bf`Yz8yC12W">
+                                                      <field name="TEXT">./T_Sofa_Cream.jpg</field>
+                                                    </shadow>
+                                                  </value>
+                                                  <next>
+                                                    <block type="variables_set" id="I3Ysf~gd_J8]Mo{7aT}[">
+                                                      <field name="VAR" id="Hd=iV@X5q`#=|?MUt?be">piso</field>
+                                                      <value name="VALUE">
+                                                        <block type="logic_boolean" id=",dWK[BJxQ|m:F|~ajLbL">
+                                                          <field name="BOOL">TRUE</field>
+                                                        </block>
+                                                      </value>
+                                                      <next>
+                                                        <block type="controls_if" id="^oAg3M1MW^[(!(;^2dVQ">
+                                                          <mutation else="1"/>
+                                                          <value name="IF0">
+                                                            <block type="variables_get" id="WTGo!$~p?X?9}Y4Z.`R@">
+                                                              <field name="VAR" id="9?_Qmgf^gPK-^TG|c:YS">sofa</field>
+                                                            </block>
+                                                          </value>
+                                                          <statement name="DO0">
+                                                            <block type="zoomCameraToObject" id="1aqq=f?Alo1K4It9aPZX">
+                                                              <mutation xmlns="http://www.w3.org/1999/xhtml" whenfinishedslot="true"></mutation>
+                                                              <value name="OBJECT">
+                                                                <shadow type="objectList" id="Wa/P$;lXuE;Gq*AyXC0e">
+                                                                  <field name="FIELDNAME">SM_Sofa</field>
+                                                                </shadow>
+                                                              </value>
+                                                              <value name="DURATION">
+                                                                <shadow type="math_number" id="ewVf$E3wTFXK,B{UIB$1">
+                                                                  <field name="NUM">1</field>
+                                                                </shadow>
+                                                              </value>
+                                                              <statement name="DO">
+                                                                <block type="lookAt" id="b@P(D#rToJP/x~N^o1_+">
+                                                                  <value name="LOOKAT">
+                                                                    <shadow type="objectList" id="(gTcPi49I|L0Fgm,wIzR">
+                                                                      <field name="FIELDNAME">SM_Sofa</field>
+                                                                    </shadow>
+                                                                  </value>
+                                                                  <value name="DURATION">
+                                                                    <shadow type="math_number" id="cG7BbL`WWzXqTq;?euH]">
+                                                                      <field name="NUM">1</field>
+                                                                    </shadow>
+                                                                  </value>
+                                                                </block>
+                                                              </statement>
+                                                              <next>
+                                                                <block type="variables_set" id="$[c.02sdK?3tz=({e(d$">
+                                                                  <field name="VAR" id="9?_Qmgf^gPK-^TG|c:YS">sofa</field>
+                                                                  <value name="VALUE">
+                                                                    <block type="logic_boolean" id="4.+F]EYL=#dB6km-k4Eh">
+                                                                      <field name="BOOL">FALSE</field>
+                                                                    </block>
+                                                                  </value>
+                                                                </block>
+                                                              </next>
+                                                            </block>
+                                                          </statement>
+                                                          <statement name="ELSE">
+                                                            <block type="variables_set" id="youC|V}3hlbDs3~].J4^">
+                                                              <field name="VAR" id="9?_Qmgf^gPK-^TG|c:YS">sofa</field>
+                                                              <value name="VALUE">
+                                                                <block type="logic_boolean" id="!jC%XJ{[p=kck8}N__vb">
+                                                                  <field name="BOOL">FALSE</field>
+                                                                </block>
+                                                              </value>
+                                                            </block>
+                                                          </statement>
+                                                        </block>
+                                                      </next>
+                                                    </block>
+                                                  </next>
+                                                </block>
+                                              </statement>
+                                              <next>
+                                                <block type="eventHTMLElem" id="7GH}p(TwpyjnsmdWMZ0[">
+                                                  <field name="EVENT">click</field>
+                                                  <field name="PARENT">TRUE</field>
+                                                  <value name="ID">
+                                                    <shadow type="text" id="K)i![1*?nZ94z(7za,*{">
+                                                      <field name="TEXT"/>
+                                                    </shadow>
+                                                    <block type="variables_get" id=":LKt#P,xdN%yx/}gKq!*">
+                                                      <field name="VAR" id="n8uGkW,mzF!?J~9M~X{-">sofa_3</field>
+                                                    </block>
+                                                  </value>
+                                                  <statement name="DO">
+                                                    <block type="replaceTexture" id=".P30yq/#6n+^0X4RRRFk">
+                                                      <mutation xmlns="http://www.w3.org/1999/xhtml" enabledoslot="false" flextexinput="false"></mutation>
+                                                      <field name="OLD_TEX_NAME">T_Sofa_White.jpg</field>
+                                                      <value name="MATERIAL">
+                                                        <shadow type="materialList" id="{^nSY2Vg(4*Chb-fVFd=">
+                                                          <field name="FIELDNAME">M_SofaWhite</field>
+                                                        </shadow>
+                                                      </value>
+                                                      <value name="NEW_TEX_URL">
+                                                        <shadow type="text" id="ph2pWXq)e)ZME|}v6IYp">
+                                                          <field name="TEXT">./T_Sofa_White.jpg</field>
+                                                        </shadow>
+                                                      </value>
+                                                      <next>
+                                                        <block type="variables_set" id="OT$#6=V[dUeBW_R}myeJ">
+                                                          <field name="VAR" id="Hd=iV@X5q`#=|?MUt?be">piso</field>
+                                                          <value name="VALUE">
+                                                            <block type="logic_boolean" id="5r5SJG@+/-G21I=C(YJf">
+                                                              <field name="BOOL">TRUE</field>
+                                                            </block>
+                                                          </value>
+                                                          <next>
+                                                            <block type="controls_if" id="}XHD@-O+I1G_:$MG]z#A">
+                                                              <mutation else="1"/>
+                                                              <value name="IF0">
+                                                                <block type="variables_get" id="j|l*;wwxOI@M~xz*6*=*">
+                                                                  <field name="VAR" id="9?_Qmgf^gPK-^TG|c:YS">sofa</field>
+                                                                </block>
+                                                              </value>
+                                                              <statement name="DO0">
+                                                                <block type="zoomCameraToObject" id=",/g28IH%E4SM@qo-;LaY">
+                                                                  <mutation xmlns="http://www.w3.org/1999/xhtml" whenfinishedslot="true"></mutation>
+                                                                  <value name="OBJECT">
+                                                                    <shadow type="objectList" id="Sxn_lI%17rETwc;wE{]^">
+                                                                      <field name="FIELDNAME">SM_Sofa</field>
+                                                                    </shadow>
+                                                                  </value>
+                                                                  <value name="DURATION">
+                                                                    <shadow type="math_number" id="3cK{.Lt~+N$8[`gZOld]">
+                                                                      <field name="NUM">1</field>
+                                                                    </shadow>
+                                                                  </value>
+                                                                  <statement name="DO">
+                                                                    <block type="lookAt" id="iQsNb~p[(|XJ1/G?OGb~">
+                                                                      <value name="LOOKAT">
+                                                                        <shadow type="objectList" id="B#?(a.Lq6s!5#o;r]caP">
+                                                                          <field name="FIELDNAME">SM_Sofa</field>
+                                                                        </shadow>
+                                                                      </value>
+                                                                      <value name="DURATION">
+                                                                        <shadow type="math_number" id="-W9H`4=Uv0t_U9Zm^U=9">
+                                                                          <field name="NUM">1</field>
+                                                                        </shadow>
+                                                                      </value>
+                                                                    </block>
+                                                                  </statement>
+                                                                  <next>
+                                                                    <block type="variables_set" id="zz:d2p$y_NwOw[AJC`yA">
+                                                                      <field name="VAR" id="9?_Qmgf^gPK-^TG|c:YS">sofa</field>
+                                                                      <value name="VALUE">
+                                                                        <block type="logic_boolean" id="x|5.0k3[F*FpfOoGmCU#">
+                                                                          <field name="BOOL">FALSE</field>
+                                                                        </block>
+                                                                      </value>
+                                                                    </block>
+                                                                  </next>
+                                                                </block>
+                                                              </statement>
+                                                              <statement name="ELSE">
+                                                                <block type="variables_set" id="5?y5.#lY7[4T@pv5J(Jr">
+                                                                  <field name="VAR" id="9?_Qmgf^gPK-^TG|c:YS">sofa</field>
+                                                                  <value name="VALUE">
+                                                                    <block type="logic_boolean" id="P2q/F|E.|A4*=F}FPX}/">
+                                                                      <field name="BOOL">FALSE</field>
+                                                                    </block>
+                                                                  </value>
+                                                                </block>
+                                                              </statement>
+                                                            </block>
+                                                          </next>
+                                                        </block>
+                                                      </next>
+                                                    </block>
+                                                  </statement>
+                                                </block>
+                                              </next>
+                                            </block>
+                                          </next>
+                                        </block>
+                                      </next>
+                                    </block>
+                                  </next>
+                                </block>
+                              </next>
+                            </block>
+                          </next>
+                        </block>
+                      </next>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </next>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="2AbrheH]YkdeKqgN;#D$" x="-1870" y="10">
+      <field name="EVENT">click</field>
+      <field name="PARENT">TRUE</field>
+      <value name="ID">
+        <shadow type="text">
+          <field name="TEXT"/>
+        </shadow>
+        <block type="variables_get" id="bWu}6-56VI+!s.s?.4#_">
+          <field name="VAR" id="}HO~VKCiCkWZ[YeWJ0gL">shel_1</field>
+        </block>
+      </value>
+      <statement name="DO">
+        <block type="replaceTexture" id="nm!tE0T0^1BvA]o^kW.}">
+          <mutation xmlns="http://www.w3.org/1999/xhtml" enabledoslot="false" flextexinput="false"></mutation>
+          <field name="OLD_TEX_NAME">T_Anaquel_Salmon.jpg</field>
+          <value name="MATERIAL">
+            <shadow type="materialList" id="f/qM8[=S+U90J?l8Ok1M">
+              <field name="FIELDNAME">M_Kitchen_Anaquel</field>
+            </shadow>
+          </value>
+          <value name="NEW_TEX_URL">
+            <shadow type="text" id="oShP*;poyMIcf+^E%8-o">
+              <field name="TEXT">./T_Anaquel_Salmon.jpg</field>
+            </shadow>
+          </value>
+          <next>
+            <block type="lookAt" id="^~s_+@WJUxN6-sih=?!0">
+              <value name="LOOKAT">
+                <shadow type="objectList" id="^Q7;TBVD3o}Z*hVok27B">
+                  <field name="FIELDNAME">SM_Kitchen</field>
+                </shadow>
+              </value>
+              <value name="DURATION">
+                <shadow type="math_number" id="CB-`k~%G|$S93~P]!N0y">
+                  <field name="NUM">1</field>
+                </shadow>
+              </value>
+            </block>
+          </next>
+        </block>
+      </statement>
+      <next>
+        <block type="eventHTMLElem" id="XVpPdG70c_Sz8PrEPUSi">
+          <field name="EVENT">click</field>
+          <field name="PARENT">TRUE</field>
+          <value name="ID">
+            <shadow type="text">
+              <field name="TEXT"/>
+            </shadow>
+            <block type="variables_get" id="ztG?XvBg]Kr:_ONnPX^,">
+              <field name="VAR" id="mL*,LeScZv~k?/!uI}3y">shel_2</field>
+            </block>
+          </value>
+          <statement name="DO">
+            <block type="replaceTexture" id="1HI`03*.eBYDljO(a=qD">
+              <mutation xmlns="http://www.w3.org/1999/xhtml" enabledoslot="false" flextexinput="false"></mutation>
+              <field name="OLD_TEX_NAME">T_Anaquel_Salmon.jpg</field>
+              <value name="MATERIAL">
+                <shadow type="materialList" id="@O:LWBv0V8@T+m0x*5*}">
+                  <field name="FIELDNAME">M_Kitchen_Anaquel</field>
+                </shadow>
+              </value>
+              <value name="NEW_TEX_URL">
+                <shadow type="text" id="=dC%dr-nR_bEFiMnu!`S">
+                  <field name="TEXT">./T_Anaquel_Black.jpg</field>
+                </shadow>
+              </value>
+              <next>
+                <block type="lookAt" id="a)B]81_@S%zh/e+vVFw}">
+                  <value name="LOOKAT">
+                    <shadow type="objectList" id="}|1@y~7YZk6H*4_dAM+G">
+                      <field name="FIELDNAME">SM_Kitchen</field>
+                    </shadow>
+                  </value>
+                  <value name="DURATION">
+                    <shadow type="math_number" id="F{BSUNI2iAOf#ld-C)We">
+                      <field name="NUM">1</field>
+                    </shadow>
+                  </value>
+                </block>
+              </next>
+            </block>
+          </statement>
+          <next>
+            <block type="eventHTMLElem" id="zjr5JzubyM!w=2l+*th7">
+              <field name="EVENT">click</field>
+              <field name="PARENT">TRUE</field>
+              <value name="ID">
+                <shadow type="text">
+                  <field name="TEXT"/>
+                </shadow>
+                <block type="variables_get" id="nX)aaZ:~kyLqvYwiUfe_">
+                  <field name="VAR" id="qP%6s|+Uid(@%6Ac,Q3l">shel_3</field>
+                </block>
+              </value>
+              <statement name="DO">
+                <block type="replaceTexture" id="K15lOh7x}qx62z_u*ZfL">
+                  <mutation xmlns="http://www.w3.org/1999/xhtml" enabledoslot="false" flextexinput="false"></mutation>
+                  <field name="OLD_TEX_NAME">T_Anaquel_Salmon.jpg</field>
+                  <value name="MATERIAL">
+                    <shadow type="materialList" id="Ik($Y@3vPS@74{74F*h-">
+                      <field name="FIELDNAME">M_Kitchen_Anaquel</field>
+                    </shadow>
+                  </value>
+                  <value name="NEW_TEX_URL">
+                    <shadow type="text" id=")V5y2!@U,8/ShJa/6$J%">
+                      <field name="TEXT">./T_Anaquel_Brown.jpg</field>
+                    </shadow>
+                  </value>
+                  <next>
+                    <block type="lookAt" id="[nT*/xGKJy?dOH=%15AO">
+                      <value name="LOOKAT">
+                        <shadow type="objectList" id="h3|I4[~|g-]^DqSZqep}">
+                          <field name="FIELDNAME">SM_Kitchen</field>
+                        </shadow>
+                      </value>
+                      <value name="DURATION">
+                        <shadow type="math_number" id=",*V3D0{w@GPX/`N}rjj)">
+                          <field name="NUM">1</field>
+                        </shadow>
+                      </value>
+                    </block>
+                  </next>
+                </block>
+              </statement>
+            </block>
+          </next>
+        </block>
+      </next>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="whenClicked" id="6-=6_wCUD_V!^.mhV$n:" x="-2250" y="430">
+      <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false" enableifmissed="false"></mutation>
+      <field name="X_RAY">FALSE</field>
+      <field name="DOUBLE_CLICK">FALSE</field>
+      <field name="LEFT_BUTTON">TRUE</field>
+      <field name="MIDDLE_BUTTON">TRUE</field>
+      <field name="RIGHT_BUTTON">TRUE</field>
+      <value name="VALUE">
+        <shadow type="objectList" id="k2*6^Z*`1pJFnx(h!UNK">
+          <field name="FIELDNAME">&lt;none&gt;</field>
+        </shadow>
+        <block type="allObjectList" id="Ew,rsN_;paQXe]X$+Tuu"/>
+      </value>
+      <statement name="DO">
+        <block type="variables_set" id="UxPV}pVE~W+o^c@$di:L">
+          <field name="VAR" id="1]O-/Q*K@Qxa-thh%hcM">interseccion</field>
+          <value name="VALUE">
+            <block type="raycast" id="PGh7V=NsC+d56rUrRPdx">
+              <value name="FROM">
+                <block type="getActiveCamera" id="V0$acDz@/sf`(b{%@6Aa"/>
+              </value>
+              <value name="DIRECTION">
+                <block type="getCameraDirection" id="N!$C!2m?v*r,B/n}vS+D">
+                  <field name="MOUSE_TOUCH">TRUE</field>
+                  <field name="INVERTED">FALSE</field>
+                </block>
+              </value>
+              <value name="INTERSECT_OBJS">
+                <shadow type="objectList" id="~EhGBX$ZvMSy7hZ{sFAm">
+                  <field name="FIELDNAME">SM_Floor</field>
+                </shadow>
+              </value>
+            </block>
+          </value>
+          <next>
+            <block type="controls_if" id="d(%Dil15z+VNAz|}t$QI">
+              <value name="IF0">
+                <block type="logic_negate" id="3M87~XfT0UzP`B}|;Lr/">
+                  <value name="BOOL">
+                    <block type="dictIsEmpty" id="TFydD=%i0oHP%w%owL#I">
+                      <value name="DICT">
+                        <block type="variables_get" id="f$.y1;mE*V(n@3=YPlMw">
+                          <field name="VAR" id="1]O-/Q*K@Qxa-thh%hcM">interseccion</field>
+                        </block>
+                      </value>
+                    </block>
+                  </value>
+                </block>
+              </value>
+              <statement name="DO0">
+                <block type="variables_set" id="Ne2Z*AF{ce@u]$0@??lX">
+                  <field name="VAR" id="*~^$MPt!EA]03c=M3+S!">posicion</field>
+                  <value name="VALUE">
+                    <block type="dictGet" id="/^qI,{wdb3ZCwMC(e}08">
+                      <value name="DICT">
+                        <block type="lists_getIndex" id="w[KZemnJs(JInw%[a,bY">
+                          <mutation statement="false" at="true"/>
+                          <field name="MODE">GET</field>
+                          <field name="WHERE">FROM_START</field>
+                          <value name="VALUE">
+                            <block type="variables_get" id="qQiJg`5Y:-3Eg+qR#dLh">
+                              <field name="VAR" id="1]O-/Q*K@Qxa-thh%hcM">interseccion</field>
+                            </block>
+                          </value>
+                          <value name="AT">
+                            <block type="math_number" id="nsFSCJB7toq@iX{j3lim">
+                              <field name="NUM">0</field>
+                            </block>
+                          </value>
+                        </block>
+                      </value>
+                      <value name="KEY">
+                        <shadow type="text" id="o+F08NhoAPgQ.M4Q@ITZ">
+                          <field name="TEXT">point</field>
+                        </shadow>
+                      </value>
+                    </block>
+                  </value>
+                  <next>
+                    <block type="console.log" id="|J;3$uv1lo!,AE+Ud*VR">
+                      <value name="VALUE">
+                        <shadow type="text" id="Z!#}nrxOiTARBA]@@7{a">
+                          <field name="TEXT">Hello, Verge!</field>
+                        </shadow>
+                        <block type="variables_get" id=",uYxiv1|)}ii9TwZ~VF{">
+                          <field name="VAR" id="1]O-/Q*K@Qxa-thh%hcM">interseccion</field>
+                        </block>
+                      </value>
+                      <next>
+                        <block type="console.log" id="vXWBCbKXT1_F8jh{lyo~">
+                          <value name="VALUE">
+                            <shadow type="text" id="Os`hTxMrRk{rLDjZ-h7N">
+                              <field name="TEXT">Hello, Verge!</field>
+                            </shadow>
+                            <block type="variables_get" id="54Te9:]Rl+l8k9L*(@-~">
+                              <field name="VAR" id="*~^$MPt!EA]03c=M3+S!">posicion</field>
+                            </block>
+                          </value>
+                        </block>
+                      </next>
+                    </block>
+                  </next>
+                </block>
+              </statement>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="variables_set" id="#@pc|*$($vQ#s^rYzzof" x="-970" y="890">
+      <field name="VAR" id="Hd=iV@X5q`#=|?MUt?be">piso</field>
+      <value name="VALUE">
+        <block type="logic_boolean" id=".Qp22OhSS60[2Yw|Kr.I">
+          <field name="BOOL">TRUE</field>
+        </block>
+      </value>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="i*_~%$3A10l/C;RA6Q4z" x="-970" y="950">
+      <field name="EVENT">click</field>
+      <field name="PARENT">TRUE</field>
+      <value name="ID">
+        <shadow type="text" id="m0v*er}GT^bL[haL{-Q.">
+          <field name="TEXT"/>
+        </shadow>
+        <block type="variables_get" id="hK=J36yq@5{nj[C5S`iG">
+          <field name="VAR" id="JN|F[r/TL/SF.]=3MQZv">piso_1</field>
+        </block>
+      </value>
+      <statement name="DO">
+        <block type="assignMaterial" id="U^.kQrt2miq{.+2I+0r%">
+          <value name="VALUE2">
+            <shadow type="materialList" id="Ry2O8E,Ux-{D2!L-yLrI">
+              <field name="FIELDNAME">M_Floor_Marble_02</field>
+            </shadow>
+          </value>
+          <value name="VALUE1">
+            <shadow type="objectList" id="B,b[EMiv)+s21{Mt5EKD">
+              <field name="FIELDNAME">SM_Floor</field>
+            </shadow>
+          </value>
+          <next>
+            <block type="variables_set" id="O4d/g5ui5v|K8MW+7Q|-">
+              <field name="VAR" id="9?_Qmgf^gPK-^TG|c:YS">sofa</field>
+              <value name="VALUE">
+                <block type="logic_boolean" id="Dy4uX!q1OE8LQqu#[$u.">
+                  <field name="BOOL">TRUE</field>
+                </block>
+              </value>
+              <next>
+                <block type="controls_if" id="*%dNHmUeH:8[o#|%aYjJ">
+                  <mutation else="1"/>
+                  <value name="IF0">
+                    <block type="variables_get" id="6mFnN8pBdJUl_o=e5uPL">
+                      <field name="VAR" id="Hd=iV@X5q`#=|?MUt?be">piso</field>
+                    </block>
+                  </value>
+                  <statement name="DO0">
+                    <block type="tweenCameraExt" id="[1BhdFOt159]:0U)l5e@">
+                      <mutation xmlns="http://www.w3.org/1999/xhtml" whenfinishedslot="false"></mutation>
+                      <field name="MOVEMENT_TYPE">SPHERICAL</field>
+                      <value name="POSITION">
+                        <block type="objectList" id="*co~Jhqw[1E]^xlbJ7Ue">
+                          <field name="FIELDNAME">SM_Door_1</field>
+                        </block>
+                      </value>
+                      <value name="LOOKAT">
+                        <block type="objectList" id="ONA|pasrD5}1^0E1M~u!">
+                          <field name="FIELDNAME">SM_Floor</field>
+                        </block>
+                      </value>
+                      <value name="DURATION">
+                        <shadow type="math_number" id="!kd5*/SPN5C[J}RWZVtY">
+                          <field name="NUM">1</field>
+                        </shadow>
+                      </value>
+                      <next>
+                        <block type="variables_set" id="Ub8(gN}#8bMQtc8?#GlH">
+                          <field name="VAR" id="Hd=iV@X5q`#=|?MUt?be">piso</field>
+                          <value name="VALUE">
+                            <block type="logic_boolean" id="+#ubFT~K-d7cyuZ2H}%R">
+                              <field name="BOOL">FALSE</field>
+                            </block>
+                          </value>
+                        </block>
+                      </next>
+                    </block>
+                  </statement>
+                  <statement name="ELSE">
+                    <block type="variables_set" id=".gg3/Ak/]Qf~FxRusk6V">
+                      <field name="VAR" id="Hd=iV@X5q`#=|?MUt?be">piso</field>
+                      <value name="VALUE">
+                        <block type="logic_boolean" id="-wdyajek:_V6nH[R7x`A">
+                          <field name="BOOL">FALSE</field>
+                        </block>
+                      </value>
+                    </block>
+                  </statement>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </statement>
+      <next>
+        <block type="eventHTMLElem" id="U)@LDbEOVElPwgu^P#lu">
+          <field name="EVENT">click</field>
+          <field name="PARENT">TRUE</field>
+          <value name="ID">
+            <shadow type="text">
+              <field name="TEXT"/>
+            </shadow>
+            <block type="variables_get" id="SOEb`4w%BH^%mWjN(V*z">
+              <field name="VAR" id="`:|ORJl29;@bNso]Xd7C">piso_2</field>
+            </block>
+          </value>
+          <statement name="DO">
+            <block type="assignMaterial" id="p5w#6Vo6oS(lf@zXXH*(">
+              <value name="VALUE2">
+                <shadow type="materialList" id="jj`qrusZ?S[(TBRA`5H5">
+                  <field name="FIELDNAME">M_Floor_Wood_02</field>
+                </shadow>
+              </value>
+              <value name="VALUE1">
+                <shadow type="objectList" id="J%=][C;Can^cgNqS(z{Z">
+                  <field name="FIELDNAME">SM_Floor</field>
+                </shadow>
+              </value>
+              <next>
+                <block type="variables_set" id="BF5:n_b}K-Xw`mA{dCqX">
+                  <field name="VAR" id="9?_Qmgf^gPK-^TG|c:YS">sofa</field>
+                  <value name="VALUE">
+                    <block type="logic_boolean" id="tM*S)XYLyk`zU]!8@_X_">
+                      <field name="BOOL">TRUE</field>
+                    </block>
+                  </value>
+                  <next>
+                    <block type="controls_if" id="@)tH!3op}z/0Y#aM25I#">
+                      <mutation else="1"/>
+                      <value name="IF0">
+                        <block type="variables_get" id="No)~_m)^-):wx67!_gHE">
+                          <field name="VAR" id="Hd=iV@X5q`#=|?MUt?be">piso</field>
+                        </block>
+                      </value>
+                      <statement name="DO0">
+                        <block type="tweenCameraExt" id="ryZsJ7KEEU@Q[g__PR^i">
+                          <mutation xmlns="http://www.w3.org/1999/xhtml" whenfinishedslot="false"></mutation>
+                          <field name="MOVEMENT_TYPE">SPHERICAL</field>
+                          <value name="POSITION">
+                            <block type="objectList" id="e{OL!}QDQ=Vs1W}db8ec">
+                              <field name="FIELDNAME">SM_Door_1</field>
+                            </block>
+                          </value>
+                          <value name="LOOKAT">
+                            <block type="objectList" id="Js-i%7h@yv~)ziLX~vzk">
+                              <field name="FIELDNAME">SM_Floor</field>
+                            </block>
+                          </value>
+                          <value name="DURATION">
+                            <shadow type="math_number" id="JKp8[{0G$BpGnXy3xQYz">
+                              <field name="NUM">1</field>
+                            </shadow>
+                          </value>
+                          <next>
+                            <block type="variables_set" id="lLTe5KNSJ4i.rkc,D8lb">
+                              <field name="VAR" id="Hd=iV@X5q`#=|?MUt?be">piso</field>
+                              <value name="VALUE">
+                                <block type="logic_boolean" id="n%qu~|5B/5mUe:w?^W(b">
+                                  <field name="BOOL">FALSE</field>
+                                </block>
+                              </value>
+                            </block>
+                          </next>
+                        </block>
+                      </statement>
+                      <statement name="ELSE">
+                        <block type="variables_set" id=".{1WzMRws$w*oV?Ca^G%">
+                          <field name="VAR" id="Hd=iV@X5q`#=|?MUt?be">piso</field>
+                          <value name="VALUE">
+                            <block type="logic_boolean" id="NG?jZVk=u*-Yn{a;vZgS">
+                              <field name="BOOL">FALSE</field>
+                            </block>
+                          </value>
+                        </block>
+                      </statement>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </statement>
+          <next>
+            <block type="eventHTMLElem" id="C;v3pq@?$sz^KgQqIWfq">
+              <field name="EVENT">click</field>
+              <field name="PARENT">TRUE</field>
+              <value name="ID">
+                <shadow type="text">
+                  <field name="TEXT"/>
+                </shadow>
+                <block type="variables_get" id="4oq(VE5,BQsJ]{-[cvnL">
+                  <field name="VAR" id="49J-)/cL_09Vhh6?+p.E">piso_3</field>
+                </block>
+              </value>
+              <statement name="DO">
+                <block type="assignMaterial" id="u/Q[YB^3aEaSeyXGS(UX">
+                  <value name="VALUE2">
+                    <shadow type="materialList" id="zYpOVOXx!}$,!zs,zbaf">
+                      <field name="FIELDNAME">M_Floor_Marble_01</field>
+                    </shadow>
+                  </value>
+                  <value name="VALUE1">
+                    <shadow type="objectList" id="3]UwKcVGcT${On8:sMoy">
+                      <field name="FIELDNAME">SM_Floor</field>
+                    </shadow>
+                  </value>
+                  <next>
+                    <block type="variables_set" id="3(h@bw?Iz,D;8[nfEs-9">
+                      <field name="VAR" id="9?_Qmgf^gPK-^TG|c:YS">sofa</field>
+                      <value name="VALUE">
+                        <block type="logic_boolean" id="KU7A(Q`j|!8f0=/J.bDy">
+                          <field name="BOOL">TRUE</field>
+                        </block>
+                      </value>
+                      <next>
+                        <block type="controls_if" id="~b[UPWxE39]Q5;M9.EPg">
+                          <mutation else="1"/>
+                          <value name="IF0">
+                            <block type="variables_get" id="el_dKY;s4TpV6lH/40o4">
+                              <field name="VAR" id="Hd=iV@X5q`#=|?MUt?be">piso</field>
+                            </block>
+                          </value>
+                          <statement name="DO0">
+                            <block type="tweenCameraExt" id="L(gES-|%$B8yA8ss@TZX">
+                              <mutation xmlns="http://www.w3.org/1999/xhtml" whenfinishedslot="false"></mutation>
+                              <field name="MOVEMENT_TYPE">SPHERICAL</field>
+                              <value name="POSITION">
+                                <block type="objectList" id="?%t8]q9uq0W/g@rqXDzH">
+                                  <field name="FIELDNAME">SM_Door_1</field>
+                                </block>
+                              </value>
+                              <value name="LOOKAT">
+                                <block type="objectList" id="svEuIWfG]f=p/?}rpeVz">
+                                  <field name="FIELDNAME">SM_Floor</field>
+                                </block>
+                              </value>
+                              <value name="DURATION">
+                                <shadow type="math_number" id="Es#EF*D0Pd.lafPl3e^v">
+                                  <field name="NUM">1</field>
+                                </shadow>
+                              </value>
+                              <next>
+                                <block type="variables_set" id="%sc+-mj`2lzS9+]BgD8A">
+                                  <field name="VAR" id="Hd=iV@X5q`#=|?MUt?be">piso</field>
+                                  <value name="VALUE">
+                                    <block type="logic_boolean" id=";8_N!b~^~kr0X0b{*}1W">
+                                      <field name="BOOL">FALSE</field>
+                                    </block>
+                                  </value>
+                                </block>
+                              </next>
+                            </block>
+                          </statement>
+                          <statement name="ELSE">
+                            <block type="variables_set" id="fv;:CqsLL`2kWHcY:qaM">
+                              <field name="VAR" id="Hd=iV@X5q`#=|?MUt?be">piso</field>
+                              <value name="VALUE">
+                                <block type="logic_boolean" id="S4T!?1`1yE-3{8z+cW|M">
+                                  <field name="BOOL">FALSE</field>
+                                </block>
+                              </value>
+                            </block>
+                          </statement>
+                        </block>
+                      </next>
+                    </block>
+                  </next>
+                </block>
+              </statement>
+            </block>
+          </next>
+        </block>
+      </next>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="setMaterialValue" id="Y*rRr4~Cg@l0;F5YumBR" x="-970" y="1790">
+      <mutation xmlns="http://www.w3.org/1999/xhtml" flexvalinput="false"></mutation>
+      <field name="MAT_VAL_NAME">Value</field>
+      <value name="MATERIAL">
+        <shadow type="materialList" id="bF$-hK]4@RS?g,T+7N5.">
+          <field name="FIELDNAME">Verge3D_Environment_World</field>
+        </shadow>
+      </value>
+      <value name="VALUE">
+        <shadow type="math_number" id="5l7XZfbS0fBqEtLS-9DC">
+          <field name="NUM">1.2</field>
+        </shadow>
+      </value>
+      <next>
+        <block type="setLightParam" id="UWl9|/Ggr:/Uc}TBbJO?">
+          <field name="TYPE">INTENSITY</field>
+          <value name="PARAM">
+            <block type="math_number" id="++qIlok2$,F?R;@qzl+%">
+              <field name="NUM">1.5</field>
+            </block>
+          </value>
+          <value name="OBJECT">
+            <shadow type="objectList" id="kBPCG,6F09ouq(38of{)">
+              <field name="FIELDNAME">Sun.002</field>
+            </shadow>
+          </value>
+        </block>
+      </next>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="batchGeometry" id="`:lTojbS7j,j,8a/NbHv" x="-970" y="1930">
+      <value name="TARGET">
+        <shadow type="allObjectList" id="8)aOr}wZ9[b8Nm=*KB,@"/>
+      </value>
+    </block>
+  </tab>
+  <editorsettings viewport-x="742.7999389648437" viewport-y="55.39997482299805" viewport-w="1068" viewport-h="712.175" viewport-hidden="true" toolbox-library-mode="false" toolbox-minimized-mode="false"></editorsettings>
+</xml>
