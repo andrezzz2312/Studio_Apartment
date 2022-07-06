@@ -287,7 +287,7 @@ path {
   font-size: calc(30px + (57 - 30) * ((100vw - 320px) / (1440 - 320)));
   color: white;
   text-shadow: 0 5px 10px rgb(34, 34, 34);
-  transform: translate3d(0, 50%, 0);
+  transform: translate3d(0, 35%, 0);
 }
 .subLabel{
   transition: all 1s;
@@ -296,7 +296,7 @@ path {
   font-size: calc(15px + (27.5 - 15) * ((100vw - 320px) / (1440 - 320)));
 color: white;
 text-shadow: 0 5px 10px rgb(34, 34, 34);
-transform: translate3d(0, -50%, 0);
+transform: translate3d(0, -35%, 0);
 }
 .line{
   transition: all 1s;

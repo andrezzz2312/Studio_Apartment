@@ -248,24 +248,44 @@ window.addEventListener('load', function () {
     const line = document.querySelector('.line')
     const subLabel = document.querySelector('.subLabel')
 console.log(info);
+
     const sofa1 = document.querySelector('.color1')
     const sofa2 = document.querySelector('.color2')
     const sofa3 = document.querySelector('.color3')
-    sofa1.addEventListener('click',function (){
-      setTimeout(() => {
-        info.classList.add('show')
-        line.classList.add('lineWidth')
+    const sofas= [sofa1,sofa2,sofa3]
+    const piso1 = document.querySelector('.piso1')
+    const piso2 = document.querySelector('.piso2')
+    const piso3 = document.querySelector('.piso3')
+    const pisos= [piso1,piso2,piso3]
+    sofas.forEach(element => {
+      element.addEventListener('click',function (){
         setTimeout(() => {
-          label.classList.add('fade')
+          info.classList.add('show')
+          line.classList.add('lineWidth')
           setTimeout(() => {
-            subLabel.classList.add('fade')
+            label.classList.add('fade')
+            setTimeout(() => {
+              subLabel.classList.add('fade')
+            }, 500);
           }, 500);
-        }, 500);
-      }, 1500);
-      
-
-
-    })
+        }, 1500);
+  
+      })
+    });
+  pisos.forEach(element => {
+      element.addEventListener('click',function (){
+       
+          info.classList.remove('show')
+          line.classList.remove('lineWidth')
+        
+            label.classList.remove('fade')
+          
+              subLabel.classList.remove('fade')
+       
+  
+      })
+    });
+  
     
     
   }
