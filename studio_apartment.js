@@ -261,7 +261,7 @@ console.log(info);
             subLabel.classList.add('fade')
           }, 500);
         }, 500);
-      }, 1000);
+      }, 1500);
       
 
 
