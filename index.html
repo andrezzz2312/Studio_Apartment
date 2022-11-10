@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<!-- __V3D_PUZZLES__ - enable Puzzles button in the App Manager -->
+<!-- __V3D_TEMPLATE__ - template-based file; delete this line to prevent this file from being updated -->
+<html lang="en">
+	<head>
+		<title>Verge3D Web Interactive</title>
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"
+		/>
+
+		<!-- Search Engines -->
+		<meta
+			name="description"
+			content="Interactive 3D Web application made with Verge3D. Immerse yourself in amazing graphics experience offered by state-of-the WebGL and HTML5 technologies."
+		/>
+		<!-- Twitter -->
+		<meta name="twitter:card" content="summary" />
+		<meta name="twitter:title" content="Verge3D Web Interactive" />
+		<meta
+			name="twitter:description"
+			content="Interactive 3D Web application made with Verge3D. Immerse yourself in amazing graphics experience offered by state-of-the WebGL and HTML5 technologies."
+		/>
+		<meta
+			name="twitter:image:src"
+			content="https://cdn.soft8soft.com/images/player_socials.jpg"
+		/>
+		<!-- Open Graph -->
+		<meta property="og:title" content="Verge3D Web Interactive" />
+		<meta
+			property="og:description"
+			content="Interactive 3D Web application made with Verge3D. Immerse yourself in amazing graphics experience offered by state-of-the WebGL and HTML5 technologies."
+		/>
+		<meta
+			property="og:image"
+			content="https://cdn.soft8soft.com/images/player_socials.jpg"
+		/>
+		<meta property="og:type" content="website" />
+
+		<meta name="generator" content="Verge3D 3.8.1" />
+
+		<!-- favicons -->
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="media/apple-touch-icon.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="media/favicon-32x32.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="media/favicon-16x16.png"
+		/>
+		<link rel="manifest" href="media/manifest.json" />
+		<link rel="mask-icon" href="media/safari-pinned-tab.svg" color="#5bbad5" />
+		<meta name="theme-color" content="#ffffff" />
+
+		<script src="v3d.js"></script>
+		<script src="studio_apartment.js"></script>
+
+		<link rel="stylesheet" type="text/css" href="studio_apartment.css" />
+	</head>
+
+	<body>
+		<div id="v3d-container">
+			<div
+				id="fullscreen_button"
+				class="fullscreen-button fullscreen-open"
+				title="Toggle fullscreen mode"
+			></div>
+			<div class="contenedor_personalizar" style="display: none">
+				<div class="ocultar">
+					<button class="ocultarbtn" id="ocultarbtn">PERSONALIZE</button>
+					<defs>
+						<!-- identify the filter-->
+						<filter id="blurFilter">
+							<!-- filter processes -->
+							<feGaussianBlur in="SourceGraphic" stdDeviation="2" />
+							<!-- stdDeviation is amount of blur -->
+						</filter>
+					</defs>
+					<svg
+						version="1.1"
+						id="arrow"
+						xmlns="http://www.w3.org/2000/svg"
+						xmlns:xlink="http://www.w3.org/1999/xlink"
+						x="0px"
+						y="0px"
+						viewBox="0 0 20.633 20.633"
+					>
+						<path
+							d="M10.79,15.617l9.648-9.646c0.133-0.131,0.195-0.301,0.195-0.473s-0.062-0.344-0.195-0.473l-0.012-0.012
+		c-0.125-0.127-0.295-0.195-0.472-0.195h-4.682c-0.18,0-0.348,0.068-0.473,0.195l-4.48,4.479l-4.48-4.479
+		C5.711,4.886,5.54,4.818,5.366,4.818H0.684c-0.182,0-0.349,0.068-0.475,0.195L0.196,5.025C0.068,5.148,0,5.322,0,5.498
+		c0,0.176,0.068,0.348,0.196,0.473l9.648,9.646C10.108,15.88,10.53,15.88,10.79,15.617z"
+							fill="hsla(360, 100%, 100%, 0.43)"
+						/>
+					</svg>
+					<!-- <img id="arrow" src="assets/icons/downarrow.svg" alt="" /> -->
+				</div>
+				<div class="dropdown">
+					<button class="dropbtn" id="dropbtn">Sofa Color</button>
+					<div class="dropdown-content">
+						<div class="color1"><a class="cl1" href="#"></a></div>
+						<div class="color2"><a class="cl2" href="#"></a></div>
+						<div class="color3"><a class="cl2" href="#"></a></div>
+					</div>
+				</div>
+
+				<div class="piso">
+					<button class="pisobtn" id="pisobtn">Floor Type</button>
+					<div class="piso-content">
+						<div class="piso1"><a href="#"></a></div>
+						<div class="piso2"><a href="#"></a></div>
+						<div class="piso3"><a href="#"></a></div>
+					</div>
+				</div>
+				<div class="anaquel">
+					<button class="anaquelbtn" id="pisobtn">Shelves Color</button>
+					<div class="anaquel-content">
+						<div class="shelve1"><a href="#"></a></div>
+						<div class="shelve2"><a href="#"></a></div>
+						<div class="shelve3"><a href="#"></a></div>
+					</div>
+				</div>
+				<!--linea de recliner -->
+
+				<!--opciones extras-->
+				<div class="extra">
+					<button class="extrabtn" id="pisobtn">Extras</button>
+					<div class="extra-content">
+						<div class="pdf">
+							<img src="assets/icons/pdf.png" alt="" />
+							<a href="#"></a>
+						</div>
+						<div class="extra1">
+							<img src="assets/icons/camera.png" alt="" />
+							<a href="#"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="info">
+				<div class="label">LOUNGE SOFA</div>
+				<div class="line"></div>
+				<div class="subLabel">25x25x25</div>
+			</div>
+		</div>
+	</body>
+</html>

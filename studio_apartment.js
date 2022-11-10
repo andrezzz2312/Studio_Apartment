@@ -222,11 +222,54 @@ window.addEventListener('load', function () {
     }
   }
 
+///////////////       ///////////////////////       ////////////////        /////////////////
+  const info = document.querySelector('.info')
+  const label = document.querySelector('.label')
+  const line = document.querySelector('.line')
+  const subLabel = document.querySelector('.subLabel')
+  let showCheck = false
+
+function vanishTitle(){ 
+  info.classList.remove('show')
+  line.classList.remove('lineWidth')        
+  label.classList.remove('fade')          
+  subLabel.classList.remove('fade')
+}
+
+function showTitle(){
+  console.log(showCheck);
+  if (showCheck === false) {
+    showCheck = true
+    setTimeout(() => {
+      info.classList.add('show')
+      line.classList.add('lineWidth')
+      setTimeout(() => {
+        label.classList.add('fade')
+        setTimeout(() => {
+          subLabel.classList.add('fade')
+          showCheck = false
+        }, 500);
+      }, 500);
+    }, 1750);
+  }
+  
+}
+
+
   function prepareExternalInterface(app) {
-    // register functions in the app.ExternalInterface to call them from Puzzles, e.g:
-    // app.ExternalInterface.myJSFunction = function() {
-    //     console.log('Hello, World!');
-    // }
+    app.ExternalInterface.showTitle = showTitle
+    app.ExternalInterface.vanishTitle = vanishTitle
+    app.ExternalInterface.changeTitle = function (labelText,subLabelText){
+
+      const label = document.querySelector('.label')  
+      const subLabel = document.querySelector('.subLabel')
+
+      label.textContent = labelText
+      subLabel.textContent = subLabelText
+    }
+ 
+  
+ 
   }
 
   function runCode(app) {
@@ -243,48 +286,9 @@ window.addEventListener('load', function () {
         contenerdorP.style.maxHeight = '2rem'
       }
     })
-    const info = document.querySelector('.info')
-    const label = document.querySelector('.label')
-    const line = document.querySelector('.line')
-    const subLabel = document.querySelector('.subLabel')
-console.log(info);
+  
 
-    const sofa1 = document.querySelector('.color1')
-    const sofa2 = document.querySelector('.color2')
-    const sofa3 = document.querySelector('.color3')
-    const sofas= [sofa1,sofa2,sofa3]
-    const piso1 = document.querySelector('.piso1')
-    const piso2 = document.querySelector('.piso2')
-    const piso3 = document.querySelector('.piso3')
-    const pisos= [piso1,piso2,piso3]
-    sofas.forEach(element => {
-      element.addEventListener('click',function (){
-        setTimeout(() => {
-          info.classList.add('show')
-          line.classList.add('lineWidth')
-          setTimeout(() => {
-            label.classList.add('fade')
-            setTimeout(() => {
-              subLabel.classList.add('fade')
-            }, 500);
-          }, 500);
-        }, 1500);
   
-      })
-    });
-  pisos.forEach(element => {
-      element.addEventListener('click',function (){
-       
-          info.classList.remove('show')
-          line.classList.remove('lineWidth')
-        
-            label.classList.remove('fade')
-          
-              subLabel.classList.remove('fade')
-       
-  
-      })
-    });
   
     
     

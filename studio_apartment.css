@@ -1,92 +1,91 @@
 /* __V3D_TEMPLATE__ - template-based file; delete this line to prevent this file from being updated */
 html {
-  background-color: #181818;
+	background-color: #181818;
 }
 * {
-  font-family: 'Poppins', sans-serif;
+	font-family: 'Poppins', sans-serif;
 }
 .dropbtn,
 .pisobtn,
 .anaquelbtn,
 .reclinerbtn,
 .extrabtn {
-  color: white;
-  border: none;
-  background-color: transparent;
-  font: normal 1rem / 1.2 'Poppins', sans-serif;
+	color: white;
+	border: none;
+	background-color: transparent;
+	font: normal 1rem / 1.2 'Poppins', sans-serif;
 }
 body {
-  margin: 0px;
-  overflow: hidden;
+	margin: 0px;
+	overflow: hidden;
 }
 path {
-  stroke: white;
-  stroke-width: 0.5px;
+	stroke: white;
+	stroke-width: 0.5px;
 }
 .recliner-content > * {
-  cursor: pointer;
+	cursor: pointer;
 }
 .extra-content > * {
-  cursor: pointer;
+	cursor: pointer;
 }
 #v3d-container {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  width: 100vw;
-  height: 100vh;
-  z-index: -1;
+	position: relative;
+
+	width: 100vw;
+	height: 100vh;
+	/* z-index: -1; */
 }
 
 .fullscreen-button {
-  position: absolute;
-  top: 5px;
-  right: 5px;
-  width: 50px;
-  height: 50px;
-  cursor: pointer;
-  background-size: 100% 100%;
-  display: none;
-  z-index: 1;
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	width: 50px;
+	height: 50px;
+	cursor: pointer;
+	background-size: 100% 100%;
+	display: none;
+	z-index: 1;
 }
 
 .fullscreen-open {
-  background-image: url('media/fullscreen_open.svg');
+	background-image: url('media/fullscreen_open.svg');
 }
 
 .fullscreen-close {
-  background-image: url('media/fullscreen_close.svg');
+	background-image: url('media/fullscreen_close.svg');
 }
 
 /* removes tap blinking on ios devices */
 * {
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 /* Dark Theme */
 
 .v3d-simple-preloader-background {
-  background-color: #181818;
+	background-color: #181818;
 }
 
 .v3d-simple-preloader-container {
-  filter: drop-shadow(0px 0px 4px #2a69bd);
+	filter: drop-shadow(0px 0px 4px #2a69bd);
 }
 /*estilo de menu mueble*/
 /* Dropdown Button */
 
 .ocultarbtn {
-  font: normal 1.5rem / 1.2 'Poppins', sans-serif;
-  color: white;
-  background-color: transparent;
+	font: normal 1.5rem / 1.2 'Poppins', sans-serif;
+	color: white;
+	background-color: transparent;
 
-  border: none;
+	border: none;
 }
 .ocultar {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin-bottom: 0.5rem;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin-bottom: 0.5rem;
 }
 
 /* The container <div> - needed to position the dropdown content */
@@ -97,9 +96,9 @@ path {
 .recliner,
 .extra,
 .dropdown {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
 }
 
 /* Dropdown Content (Hidden by Default) */
@@ -108,10 +107,10 @@ path {
 .anaquel-content,
 .recliner-content,
 .extra-content {
-  z-index: 1;
-  display: flex;
-  flex-direction: row;
-  gap: 0.5rem;
+	z-index: 1;
+	display: flex;
+	flex-direction: row;
+	gap: 0.5rem;
 }
 
 /* Links inside the dropdown */
@@ -121,245 +120,222 @@ path {
 .recliner-content,
 .extra-content,
 .dropdown-content a {
-  text-decoration: none;
+	text-decoration: none;
 }
 #arrow {
-  width: 1.5rem;
-  filter: drop-shadow(0px 0px 1px rgba(255, 255, 255, 0.24));
-  filter: url(#blurFilter);
-  -webkit-filter: url(#blurFilter);
-  -moz-filter: url(#blurFilter);
-  -o-filter: url(#blurFilter);
-  -ms-filter: url(#blurFilter);
-  cursor: pointer;
+	width: 1.5rem;
+	filter: drop-shadow(0px 0px 1px rgba(255, 255, 255, 0.24));
+	filter: url(#blurFilter);
+	-webkit-filter: url(#blurFilter);
+	-moz-filter: url(#blurFilter);
+	-o-filter: url(#blurFilter);
+	-ms-filter: url(#blurFilter);
+	cursor: pointer;
 }
 
 /* Change color of dropdown links on hover */
 .dropdown-content div:hover {
-  /* opacity: 0.3; */
-  box-shadow: 0 0 15px 3px #ffffff;
+	/* opacity: 0.3; */
+	box-shadow: 0 0 15px 3px #ffffff;
 }
 .piso-content div:hover {
-  box-shadow: 0 0 15px 3px #ffffff;
+	box-shadow: 0 0 15px 3px #ffffff;
 }
 .anaquel-content div:hover {
-  box-shadow: 0 0 15px 3px #ffffff;
+	box-shadow: 0 0 15px 3px #ffffff;
 }
 .recliner-content div:hover {
-  box-shadow: inset 0 0 15px 3px #ffffff, 0 0 15px 3px #ffffff;
+	box-shadow: inset 0 0 15px 3px #ffffff, 0 0 15px 3px #ffffff;
 }
 .extra-content div:hover {
-  box-shadow: inset 0 0 15px 3px #ffffff, 0 0 15px 3px #ffffff;
+	box-shadow: inset 0 0 15px 3px #ffffff, 0 0 15px 3px #ffffff;
 
-  /* filter: drop-shadow(0 0 0.75rem crimson); */
+	/* filter: drop-shadow(0 0 0.75rem crimson); */
 }
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
-  display: flex;
-  align-items: flex-start;
+	display: flex;
+	align-items: flex-start;
 }
 .piso:hover .piso-content {
-  display: flex;
-  align-items: flex-start;
+	display: flex;
+	align-items: flex-start;
 }
 .anaquel:hover .anaquel-content {
-  display: flex;
-  align-items: flex-start;
+	display: flex;
+	align-items: flex-start;
 }
 .recliner:hover .recliner-content {
-  display: flex;
-  align-items: flex-start;
+	display: flex;
+	align-items: flex-start;
 }
 .extra:hover .extra-content {
-  display: flex;
-  align-items: flex-start;
+	display: flex;
+	align-items: flex-start;
 }
 /* Change the background color of the dropdown button when the dropdown content is shown */
 
 .contenedor_personalizar {
-  display: flex;
-  flex-direction: column;
-  width: 18%;
-  gap: 0.7rem;
-  margin-left: 40rem;
-  margin-top: 3rem;
-  border-radius: 1rem;
-  padding: 1rem;
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 1rem;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(4.5px);
-  -webkit-backdrop-filter: blur(4.5px);
-  border: 1px solid rgba(255, 255, 255, 0.24);
-  overflow: hidden;
-  max-height: 2rem;
-  transition: max-height 1s ease-in-out;
+	display: flex;
+	flex-direction: column;
+	width: max-content;
+	gap: 0.7rem;
+	margin-left: 5%;
+	margin-top: 3rem;
+	border-radius: 1rem;
+	padding: 1rem;
+	background: rgba(255, 255, 255, 0.1);
+	border-radius: 1rem;
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(4.5px);
+	-webkit-backdrop-filter: blur(4.5px);
+	border: 1px solid rgba(255, 255, 255, 0.24);
+	overflow: hidden;
+	max-height: 2rem;
+	transition: max-height 0.5s ease-in-out;
+	z-index: 150;
 }
 .piso1 {
-  background-image: url('uisuejgl_2K_Albedo.jpg');
-  cursor: pointer;
+	background-image: url('uisuejgl_2K_Albedo.jpg');
+	cursor: pointer;
 }
 .piso2 {
-  background-image: url('udlxbgtl_2K_Albedo.jpg');
-  cursor: pointer;
+	background-image: url('udlxbgtl_2K_Albedo.jpg');
+	cursor: pointer;
 }
 .piso3 {
-  background-image: url('vetldicv_2K_Albedo.jpg');
-  cursor: pointer;
+	background-image: url('vetldicv_2K_Albedo.jpg');
+	cursor: pointer;
 }
 .piso-content > div {
-  width: 2rem;
-  height: 2rem;
-  border-radius: 0.5rem;
-  transition: all 0.5s ease;
+	width: 2rem;
+	height: 2rem;
+	border-radius: 0.5rem;
+	transition: all 0.5s ease;
 }
 
 .dropdown-content > div {
-  width: 2rem;
-  height: 2rem;
-  border-radius: 0.5rem;
-  transition: all 0.5s ease;
+	width: 2rem;
+	height: 2rem;
+	border-radius: 0.5rem;
+	transition: all 0.5s ease;
 }
 .anaquel-content > div {
-  width: 2rem;
-  height: 2rem;
-  border-radius: 0.5rem;
-  transition: all 0.5s ease;
+	width: 2rem;
+	height: 2rem;
+	border-radius: 0.5rem;
+	transition: all 0.5s ease;
 }
 .recliner-content > div {
-  width: 2rem;
-  height: 2rem;
-  border-radius: 0.5rem;
-  transition: all 0.5s ease;
+	width: 2rem;
+	height: 2rem;
+	border-radius: 0.5rem;
+	transition: all 0.5s ease;
 }
 .extra-content > div {
-  width: 2rem;
-  height: 2rem;
-  border-radius: 0.5rem;
-  transition: all 0.5s ease;
+	width: 2rem;
+	height: 2rem;
+	border-radius: 0.5rem;
+	transition: all 0.5s ease;
 }
 .recliner-content > div > img {
-  width: 2rem;
-  height: 2rem;
+	width: 2rem;
+	height: 2rem;
 }
 .extra-content > div > img {
-  width: 2rem;
-  height: 2rem;
+	width: 2rem;
+	height: 2rem;
 }
 
 .color1 {
-  background-color: #2a69bd;
-  cursor: pointer;
+	background-color: #2a69bd;
+	cursor: pointer;
 }
 .color2 {
-  background-color: #81c479;
-  cursor: pointer;
+	background-color: #81c479;
+	cursor: pointer;
 }
 .color3 {
-  background-color: whitesmoke;
-  cursor: pointer;
+	background-color: whitesmoke;
+	cursor: pointer;
 }
 .shelve1 {
-  background-image: url('T_Anaquel_Salmon.jpg');
-  cursor: pointer;
+	background-image: url('T_Anaquel_Salmon.jpg');
+	cursor: pointer;
 }
 .shelve2 {
-  background-image: url('T_Anaquel_Black.jpg');
-  cursor: pointer;
+	background-image: url('T_Anaquel_Black.jpg');
+	cursor: pointer;
 }
 .shelve3 {
-  background-image: url('T_Anaquel_Brown.jpg');
-  cursor: pointer;
+	background-image: url('T_Anaquel_Brown.jpg');
+	cursor: pointer;
 }
 
-.info{
-  transition: all 1s;
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  top: 5rem;
-  right: 5rem;
-  opacity: 0;
-}
-.label{
-  transition: all 1s;
-  opacity: 0;
-  font-size: calc(30px + (57 - 30) * ((100vw - 320px) / (1440 - 320)));
-  color: white;
-  text-shadow: 0 5px 10px rgb(34, 34, 34);
-  transform: translate3d(0, 35%, 0);
-}
-.subLabel{
-  transition: all 1s;
-  opacity: 0;
-  margin-top: 1rem;
-  font-size: calc(15px + (27.5 - 15) * ((100vw - 320px) / (1440 - 320)));
-color: white;
-text-shadow: 0 5px 10px rgb(34, 34, 34);
-transform: translate3d(0, -35%, 0);
-}
-.line{
-  transition: all 1s;
-  content: '';
-  width:0px;
-  height: 10px;
-  color: white;
-  filter: drop-shadow(0 5px 10px rgb(34, 34, 34));
-  background-color: white;
-  }
-.fade{
-  opacity: 1;
-  transform: translate3d(0, 0, 0);
-}
-.lineWidth{
-  width: calc(200px + (400 - 200) * ((100vw - 320px) / (1440 - 320)));
-}
-.show{
-  opacity: 1;
-}
-.vanish{
-  animation: vanish 0.5s ease-in-out forwards
-}
+.info {
+	transition: all 1s;
+	position: absolute;
+	display: flex;
+	flex-direction: column;
 
-
-@keyframes fadeup {
-  0% {
-    opacity: 0;
-    transform: translate3d(0, 100%, 0);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
-  }
+	top: 5%;
+	right: 5%;
+	opacity: 0;
+	pointer-events: none;
 }
-
-@keyframes fadedown {
-  0% {
-    opacity: 0;
-    transform: translate3d(0, -100%, 0);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
-  }
+/* .info {
+	transition: all 1s;
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	top: 5%;
+	right: 5%;
+	opacity: 0;
+	pointer-events: none;
+} */
+.label {
+	transition: all 1s;
+	opacity: 0;
+	font-size: calc(30px + (57 - 30) * ((100vw - 320px) / (1440 - 320)));
+	color: white;
+	text-shadow: 0 5px 10px rgb(34, 34, 34);
+	transform: translate3d(0, 50%, 0);
 }
-@keyframes vanish {
-  0% {
-    opacity: 1;  
-  }
-
-  100% {
-    opacity: 0;   
-  }
+.subLabel {
+	transition: all 1s;
+	opacity: 0;
+	margin-top: 1rem;
+	font-size: calc(15px + (27.5 - 15) * ((100vw - 320px) / (1440 - 320)));
+	color: white;
+	text-shadow: 0 5px 10px rgb(34, 34, 34);
+	transform: translate3d(0, -50%, 0);
 }
-@keyframes show {
-  0% {
-    opacity: 0;  
-  }
-
-  100% {
-    opacity: 1;   
-  }
+.line {
+	transition: all 1s;
+	content: '';
+	width: 0px;
+	height: 10px;
+	color: white;
+	filter: drop-shadow(0 5px 10px rgb(34, 34, 34));
+	background-color: white;
+}
+.fade {
+	opacity: 1;
+	transform: translate3d(0, 0, 0);
+}
+.lineWidth {
+	width: 100%;
+}
+.show {
+	opacity: 1;
+}
+.vanish {
+	animation: vanish 0.5s ease-in-out forwards;
+}
+@media (orientation: portrait) {
+	.info {
+		top: auto;
+		bottom: 5%;
+		right: 5%;
+	}
 }
