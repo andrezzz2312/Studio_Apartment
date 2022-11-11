@@ -10,14 +10,26 @@ html {
 .anaquelbtn,
 .reclinerbtn,
 .extrabtn {
-	color: white;
+	color: #696968;
 	border: none;
 	background-color: transparent;
+
 	font: normal 1rem / 1.2 'Poppins', sans-serif;
 }
 body {
 	margin: 0px;
 	overflow: hidden;
+}
+.movementArrows {
+	display: flex;
+	align-items: center;
+}
+.controls {
+	display: grid;
+
+	position: absolute;
+	bottom: 2%;
+	right: 2%;
 }
 path {
 	stroke: white;
@@ -48,7 +60,25 @@ path {
 	display: none;
 	z-index: 1;
 }
+.okayBtn {
+	font-size: 1rem;
+	font-weight: bold;
 
+	padding: 0.5rem 2.5rem;
+
+	background: #a3a3a2;
+	border: none;
+	border-radius: 1rem;
+
+	color: white;
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+	cursor: pointer;
+	pointer-events: all;
+	transition: all 0.5s ease;
+}
+.okayBtn:hover {
+	box-shadow: none;
+}
 .fullscreen-open {
 	background-image: url('media/fullscreen_open.svg');
 }
@@ -76,7 +106,7 @@ path {
 
 .ocultarbtn {
 	font: normal 1.5rem / 1.2 'Poppins', sans-serif;
-	color: white;
+	color: #0097ae;
 	background-color: transparent;
 
 	border: none;
@@ -111,6 +141,7 @@ path {
 	display: flex;
 	flex-direction: row;
 	gap: 0.5rem;
+	margin-left: 1.2rem;
 }
 
 /* Links inside the dropdown */
@@ -184,28 +215,57 @@ path {
 	margin-top: 3rem;
 	border-radius: 1rem;
 	padding: 1rem;
-	background: rgba(255, 255, 255, 0.1);
-	border-radius: 1rem;
-	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-	backdrop-filter: blur(4.5px);
-	-webkit-backdrop-filter: blur(4.5px);
-	border: 1px solid rgba(255, 255, 255, 0.24);
+	background: rgba(255, 255, 255, 0.65);
+
+	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
+	border-radius: 10px;
+	border: 1px solid rgba(255, 255, 255, 0.18);
 	overflow: hidden;
 	max-height: 2rem;
 	transition: max-height 0.5s ease-in-out;
 	z-index: 150;
 }
+.movement {
+	display: flex;
+	flex-direction: row;
+	gap: 1rem;
+}
+.camera {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 1rem;
+	justify-self: stretch;
+}
+.rightC {
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+	animation: rightC 1.5s ease infinite;
+}
+.wasd {
+	display: grid;
+}
+#W,
+#A,
+#S,
+#D {
+	width: 3rem;
+}
 .piso1 {
 	background-image: url('uisuejgl_2K_Albedo.jpg');
 	cursor: pointer;
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .piso2 {
 	background-image: url('udlxbgtl_2K_Albedo.jpg');
 	cursor: pointer;
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .piso3 {
 	background-image: url('vetldicv_2K_Albedo.jpg');
 	cursor: pointer;
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .piso-content > div {
 	width: 2rem;
@@ -250,26 +310,32 @@ path {
 .color1 {
 	background-color: #2a69bd;
 	cursor: pointer;
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .color2 {
 	background-color: #81c479;
 	cursor: pointer;
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .color3 {
 	background-color: whitesmoke;
 	cursor: pointer;
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .shelve1 {
 	background-image: url('T_Anaquel_Salmon.jpg');
 	cursor: pointer;
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .shelve2 {
 	background-image: url('T_Anaquel_Black.jpg');
 	cursor: pointer;
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .shelve3 {
 	background-image: url('T_Anaquel_Brown.jpg');
 	cursor: pointer;
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .info {
@@ -293,6 +359,35 @@ path {
 	opacity: 0;
 	pointer-events: none;
 } */
+.welcome {
+	z-index: 200;
+	padding: 2rem;
+
+	color: #696968;
+	background: rgba(255, 255, 255, 0.65);
+	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
+	border-radius: 10px;
+	border: 1px solid rgba(255, 255, 255, 0.18);
+	transform: translate3d(0, 50%, 0);
+	opacity: 0;
+	border-radius: 1rem;
+	text-align: center;
+
+	transition: all 1s ease-in-out;
+}
+.welcomeContainer {
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100vw;
+	height: 100vh;
+	left: 0;
+	top: 0;
+	pointer-events: none;
+}
 .label {
 	transition: all 1s;
 	opacity: 0;
@@ -329,13 +424,27 @@ path {
 .show {
 	opacity: 1;
 }
+.appear {
+	opacity: 1;
+	transform: translate3d(0, 0, 0);
+}
 .vanish {
-	animation: vanish 0.5s ease-in-out forwards;
+	transform: translate3d(0, 50%, 0);
+	opacity: 0;
 }
 @media (orientation: portrait) {
 	.info {
 		top: auto;
 		bottom: 5%;
 		right: 5%;
+	}
+}
+
+@keyframes rightC {
+	from {
+		transform: translateX(0);
+	}
+	to {
+		transform: translateX(-65%);
 	}
 }
