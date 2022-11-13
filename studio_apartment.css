@@ -26,10 +26,16 @@ body {
 }
 .controls {
 	display: grid;
-
+	opacity: 0;
+	transform: translate3d(130%, 0, 0);
 	position: absolute;
 	bottom: 2%;
 	right: 2%;
+	transition: ease 2s;
+}
+.showControls {
+	transform: translate3d(0, 0, 0);
+	opacity: 1;
 }
 path {
 	stroke: white;
@@ -108,7 +114,7 @@ path {
 	font: normal 1.5rem / 1.2 'Poppins', sans-serif;
 	color: #0097ae;
 	background-color: transparent;
-
+	font-weight: bold;
 	border: none;
 }
 .ocultar {
@@ -154,6 +160,7 @@ path {
 	text-decoration: none;
 }
 #arrow {
+	fill: #0097ae;
 	width: 1.5rem;
 	filter: drop-shadow(0px 0px 1px rgba(255, 255, 255, 0.24));
 	filter: url(#blurFilter);
@@ -216,7 +223,7 @@ path {
 	border-radius: 1rem;
 	padding: 1rem;
 	background: rgba(255, 255, 255, 0.65);
-
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 	backdrop-filter: blur(10px);
 	-webkit-backdrop-filter: blur(10px);
 	border-radius: 10px;
@@ -241,7 +248,7 @@ path {
 	display: flex;
 	justify-content: flex-end;
 	align-items: flex-end;
-	animation: rightC 1.5s ease infinite;
+	animation: rightC 1.5s ease infinite alternate;
 }
 .wasd {
 	display: grid;
@@ -251,6 +258,17 @@ path {
 #S,
 #D {
 	width: 3rem;
+	animation: grow 1s ease infinite alternate;
+}
+
+#A {
+	animation-delay: 0.5s;
+}
+#S {
+	animation-delay: 1s;
+}
+#D {
+	animation-delay: 1.5;
 }
 .piso1 {
 	background-image: url('uisuejgl_2K_Albedo.jpg');
@@ -365,7 +383,7 @@ path {
 
 	color: #696968;
 	background: rgba(255, 255, 255, 0.65);
-	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 	backdrop-filter: blur(10px);
 	-webkit-backdrop-filter: blur(10px);
 	border-radius: 10px;
@@ -446,5 +464,14 @@ path {
 	}
 	to {
 		transform: translateX(-65%);
+	}
+}
+
+@keyframes grow {
+	from {
+		transform: scale(90%);
+	}
+	to {
+		transform: scale(105%);
 	}
 }

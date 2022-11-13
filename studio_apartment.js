@@ -269,9 +269,25 @@ window.addEventListener('load', function () {
 		const arrow = document.querySelector('#arrow')
 		const okay = document.querySelector('.okayBtn')
 		const welcome = document.querySelector('.welcome')
+		const controls = document.querySelector('.controls')
 		let check = false
 		okay.addEventListener('click', function () {
 			welcome.classList.add('vanish')
+			okay.style.pointerEvents = 'none'
+			controls.classList.add('showControls')
+			setTimeout(() => {
+				controls.classList.remove('showControls')
+			}, 15000)
+			document.addEventListener('keydown', keyDownTextField, false)
+
+			function keyDownTextField(e) {
+				var keyCode = e.keyCode
+				if (keyCode == 'w' || 'a' || 's' || 'd') {
+					setTimeout(() => {
+						controls.classList.remove('showControls')
+					}, 5000)
+				}
+			}
 		})
 		arrow.addEventListener('click', function () {
 			if (!check) {
