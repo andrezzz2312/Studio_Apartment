@@ -8,7 +8,7 @@
       <field name="FADE_ANNOTATIONS">TRUE</field>
     </block>
   </tab>
-  <tab name="main" type="MainTab" active="true" scrollx="2354.641851366934" scrolly="-187.95070565168135" scale="0.822702474791881">
+  <tab name="main" type="MainTab" active="true" scrollx="1859.0790999013889" scrolly="-239.423957587784" scale="0.6768393620286866">
     <variables xmlns="https://developers.google.com/blockly/xml">
       <variable id="9?_Qmgf^gPK-^TG|c:YS">sofa</variable>
       <variable id=":+]Hb!bafgf9$Pk6k@Za">sofaValue</variable>
@@ -16,36 +16,36 @@
       <variable id="O_P3}Jqi1gdWkH{UV${P">objectList</variable>
       <variable id="5Bti0fMFT!dGo!1wcAao">listPosition</variable>
       <variable id="}HO~VKCiCkWZ[YeWJ0gL">shel_1</variable>
+      <variable id="2u)`T]#TvqB^41gYn^6o">cameraX</variable>
       <variable id="xBnzqVM]-7Opne{Q.N!$">shelveValue</variable>
       <variable id="mL*,LeScZv~k?/!uI}3y">shel_2</variable>
-      <variable id="1]O-/Q*K@Qxa-thh%hcM">interseccion</variable>
-      <variable id="MC}.|/48i81|5RxLHl.b">moving</variable>
+      <variable id="S;,/I4i$AkOSgsy}rgup">cameraY</variable>
       <variable id="o]^Yqvigy.OC.,;^?*v7">sofaPrice</variable>
       <variable id="qP%6s|+Uid(@%6Ac,Q3l">shel_3</variable>
+      <variable id="T[NM2:8W:3e72ji}BVr5">cameraZ</variable>
       <variable id="0q%tCl^(]I;8$,+vmA=|">floorPrice</variable>
+      <variable id="1]O-/Q*K@Qxa-thh%hcM">interseccion</variable>
+      <variable id="MC}.|/48i81|5RxLHl.b">moving</variable>
       <variable id="JN|F[r/TL/SF.]=3MQZv">piso_1</variable>
-      <variable id="*~^$MPt!EA]03c=M3+S!">posicion</variable>
-      <variable id="*5{xTcJ@MGtH8F6Z]t%o">recliner</variable>
+      <variable id="f8cz=)azh@EKgQtA%n!?">rotation_recliner</variable>
       <variable id="nUHFf#!wXMDZ%s#4N_}?">shelvePrice</variable>
       <variable id="7I;fPakqT%x2LJJWcysa">shelveClicked</variable>
       <variable id="`:|ORJl29;@bNso]Xd7C">piso_2</variable>
-      <variable id="2u)`T]#TvqB^41gYn^6o">cameraX</variable>
+      <variable id="k{cYe^`%A`]-J)*a:~mj">delete_recliner</variable>
       <variable id="52h!^@v}EtGd*7Rq^fxk">mouseMove</variable>
+      <variable id="*~^$MPt!EA]03c=M3+S!">posicion</variable>
+      <variable id="*5{xTcJ@MGtH8F6Z]t%o">recliner</variable>
       <variable id="49J-)/cL_09Vhh6?+p.E">piso_3</variable>
-      <variable id="S;,/I4i$AkOSgsy}rgup">cameraY</variable>
+      <variable id="+F5Ey$R@~7!J9^QK:yjQ">screen_shot</variable>
       <variable id="smcI7,:[kf0iey3KuT7k">sofaClicked</variable>
       <variable id="_v9wU|{iXd8K$H7]vOBp">floorClicked</variable>
-      <variable id="T[NM2:8W:3e72ji}BVr5">cameraZ</variable>
-      <variable id="f8cz=)azh@EKgQtA%n!?">rotation_recliner</variable>
-      <variable id="k{cYe^`%A`]-J)*a:~mj">delete_recliner</variable>
-      <variable id="UTi=eV[[]%STh|DnOe{)">info</variable>
-      <variable id="+F5Ey$R@~7!J9^QK:yjQ">screen_shot</variable>
-      <variable id="u,m/6Aln4]D%:a:sP$-;">title</variable>
       <variable id="pEL5$=dd,.Radi@:qV2v">dowload</variable>
-      <variable id="fd(0*J8#wZ8gN{vxUVZA">line</variable>
       <variable id="n$n?f4E7QKJ5V_WKH/w9">upload</variable>
-      <variable id=";{`tJGSo1UYu^n4Dm~sd">subTitle</variable>
       <variable id=";ziVG6w53qZ3(~]nPSP7">json</variable>
+      <variable id="UTi=eV[[]%STh|DnOe{)">info</variable>
+      <variable id="u,m/6Aln4]D%:a:sP$-;">title</variable>
+      <variable id="fd(0*J8#wZ8gN{vxUVZA">line</variable>
+      <variable id=";{`tJGSo1UYu^n4Dm~sd">subTitle</variable>
       <variable id="DwZ+3Nc,i(=fq,hFF2A@">sofa_1</variable>
       <variable id="=RzhF`vdc}pQ2nUGy(hW">sofa_2</variable>
       <variable id="n8uGkW,mzF!?J~9M~X{-">sofa_3</variable>
@@ -1949,681 +1949,290 @@
         </block>
       </value>
     </block>
-    <block xmlns="https://developers.google.com/blockly/xml" type="controls_ifelse" id="5wl6LF?yrjKVEr8*4qYV" x="-2430" y="470">
-      <value name="IF0">
-        <block type="logic_compare" id="z7B,3!F+iY,B:M~ld*$d">
-          <field name="OP">EQ</field>
-          <value name="A">
-            <block type="callJSFunctionWithReturn" id="2{S.PQ^7gE$Z#!fSxmvH">
-              <mutation xmlns="http://www.w3.org/1999/xhtml" name="detectDevice"></mutation>
-              <field name="NAME">detectDevice</field>
-            </block>
-          </value>
-          <value name="B">
-            <block type="text" id="QF*DEMD?53)I4n07YIbf">
-              <field name="TEXT">movil</field>
-            </block>
-          </value>
-        </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="createObject" id="_PN-c$=d59f1Cf0eFTrD" x="-2430" y="510">
+      <mutation xmlns="http://www.w3.org/1999/xhtml" object_type="CIRCLE"></mutation>
+      <field name="TYPE">CIRCLE</field>
+      <field name="CAMERA_TYPE">PERSPECTIVE</field>
+      <field name="LIGHT_TYPE">AMBIENT</field>
+      <value name="NAME">
+        <shadow type="text" id="xD*uV-iOp!%R%=[JiAnw">
+          <field name="TEXT">circulo</field>
+        </shadow>
       </value>
-      <statement name="DO0">
-        <block type="console.log" id=",ah51]$Vt}TVc@*85lYZ">
-          <value name="VALUE">
-            <shadow type="text" id="sq/3)EZO#~.[V`9hMw9/">
-              <field name="TEXT">movil</field>
+      <value name="RADIUS">
+        <shadow type="math_number" id="oKtSuVU#72dmOZnss]AS">
+          <field name="NUM">0.15</field>
+        </shadow>
+      </value>
+      <value name="SEGMENTS">
+        <shadow type="math_number" id="?tnbvk49):qsET4CV76:">
+          <field name="NUM">32</field>
+        </shadow>
+      </value>
+      <next>
+        <block type="setObjTransform" id="m-R,P;#x!!ey:vYaGIbO">
+          <mutation xmlns="http://www.w3.org/1999/xhtml" usevectorslot="false" useworldspace="false"></mutation>
+          <field name="MODE">position</field>
+          <field name="OFFSET">FALSE</field>
+          <value name="TARGETOBJ">
+            <shadow type="objectList" id="4^}FeTYX+t=~#-=tfyWI">
+              <field name="FIELDNAME">circulo</field>
             </shadow>
           </value>
-        </block>
-      </statement>
-      <statement name="ELSE">
-        <block type="console.log" id="/MR1=rxS{/~6n)|OF{3^">
-          <value name="VALUE">
-            <shadow type="text" id="@`B?XsH?#8obpG5]HXd;">
-              <field name="TEXT">pc</field>
-            </shadow>
+          <value name="X">
+            <block type="math_number" id="(K]b(7Cx3Okp]FGVqgZ@">
+              <field name="NUM">2</field>
+            </block>
+          </value>
+          <value name="Y">
+            <block type="math_number" id="FzvowmP5Py+5wI7QzRO-">
+              <field name="NUM">1</field>
+            </block>
+          </value>
+          <value name="Z">
+            <block type="math_number" id=";DSu~Oj.i-~-#@SGlls!">
+              <field name="NUM">0.05</field>
+            </block>
           </value>
           <next>
-            <block type="createObject" id="_PN-c$=d59f1Cf0eFTrD">
-              <mutation xmlns="http://www.w3.org/1999/xhtml" object_type="CIRCLE"></mutation>
-              <field name="TYPE">CIRCLE</field>
-              <field name="CAMERA_TYPE">PERSPECTIVE</field>
-              <field name="LIGHT_TYPE">AMBIENT</field>
-              <value name="NAME">
-                <shadow type="text" id="xD*uV-iOp!%R%=[JiAnw">
-                  <field name="TEXT">circulo</field>
+            <block type="setObjTransform" id="yI=*,bD/9.dPShA`n@$Z">
+              <mutation xmlns="http://www.w3.org/1999/xhtml" usevectorslot="false" useworldspace="false"></mutation>
+              <field name="MODE">rotation</field>
+              <field name="OFFSET">FALSE</field>
+              <value name="TARGETOBJ">
+                <shadow type="objectList" id="V4XM}!9J^6JI%Wy%SvP;">
+                  <field name="FIELDNAME">circulo</field>
                 </shadow>
               </value>
-              <value name="RADIUS">
-                <shadow type="math_number" id="oKtSuVU#72dmOZnss]AS">
-                  <field name="NUM">0.15</field>
-                </shadow>
-              </value>
-              <value name="SEGMENTS">
-                <shadow type="math_number" id="?tnbvk49):qsET4CV76:">
-                  <field name="NUM">32</field>
-                </shadow>
-              </value>
-              <next>
-                <block type="setObjTransform" id="m-R,P;#x!!ey:vYaGIbO">
-                  <mutation xmlns="http://www.w3.org/1999/xhtml" usevectorslot="false" useworldspace="false"></mutation>
-                  <field name="MODE">position</field>
-                  <field name="OFFSET">FALSE</field>
-                  <value name="TARGETOBJ">
-                    <shadow type="objectList" id="4^}FeTYX+t=~#-=tfyWI">
-                      <field name="FIELDNAME">circulo</field>
-                    </shadow>
-                  </value>
-                  <value name="X">
-                    <block type="math_number" id="(K]b(7Cx3Okp]FGVqgZ@">
-                      <field name="NUM">2</field>
-                    </block>
-                  </value>
-                  <value name="Y">
-                    <block type="math_number" id="FzvowmP5Py+5wI7QzRO-">
-                      <field name="NUM">1</field>
-                    </block>
-                  </value>
-                  <value name="Z">
-                    <block type="math_number" id=";DSu~Oj.i-~-#@SGlls!">
-                      <field name="NUM">0.05</field>
-                    </block>
-                  </value>
-                  <next>
-                    <block type="setObjTransform" id="yI=*,bD/9.dPShA`n@$Z">
-                      <mutation xmlns="http://www.w3.org/1999/xhtml" usevectorslot="false" useworldspace="false"></mutation>
-                      <field name="MODE">rotation</field>
-                      <field name="OFFSET">FALSE</field>
-                      <value name="TARGETOBJ">
-                        <shadow type="objectList" id="V4XM}!9J^6JI%Wy%SvP;">
-                          <field name="FIELDNAME">circulo</field>
-                        </shadow>
-                      </value>
-                      <value name="X">
-                        <block type="angle" id="}!f/oSbkk[F;vIE$B!j.">
-                          <field name="ANGLE">90</field>
-                        </block>
-                      </value>
-                    </block>
-                  </next>
-                </block>
-              </next>
-            </block>
-          </next>
-        </block>
-      </statement>
-      <next>
-        <block type="eventHTMLElem" id="W]=yZizIiT!F6IYSBPtT">
-          <field name="EVENT">mousemove</field>
-          <field name="PARENT">FALSE</field>
-          <value name="ID">
-            <shadow type="text" id="ClOE_pSrS(Bkd9!OgEw4">
-              <field name="TEXT">body</field>
-            </shadow>
-            <block type="DOMObjectSelector" id="in%kODchNgcL?-0w@~[C">
-              <field name="DOM_OBJECT">WINDOW</field>
-            </block>
-          </value>
-          <statement name="DO">
-            <block type="variables_set" id="UxPV}pVE~W+o^c@$di:L">
-              <field name="VAR" id="1]O-/Q*K@Qxa-thh%hcM">interseccion</field>
-              <value name="VALUE">
-                <block type="raycast" id="PGh7V=NsC+d56rUrRPdx">
-                  <value name="FROM">
-                    <block type="getActiveCamera" id="V0$acDz@/sf`(b{%@6Aa"></block>
-                  </value>
-                  <value name="DIRECTION">
-                    <block type="getCameraDirection" id="N!$C!2m?v*r,B/n}vS+D">
-                      <field name="MOUSE_TOUCH">TRUE</field>
-                      <field name="INVERTED">FALSE</field>
-                    </block>
-                  </value>
-                  <value name="INTERSECT_OBJS">
-                    <shadow type="objectList" id="~EhGBX$ZvMSy7hZ{sFAm">
-                      <field name="FIELDNAME">SM_Floor</field>
-                    </shadow>
-                  </value>
+              <value name="X">
+                <block type="angle" id="}!f/oSbkk[F;vIE$B!j.">
+                  <field name="ANGLE">90</field>
                 </block>
               </value>
               <next>
-                <block type="controls_if" id="d(%Dil15z+VNAz|}t$QI">
-                  <value name="IF0">
-                    <block type="logic_negate" id="3M87~XfT0UzP`B}|;Lr/">
-                      <value name="BOOL">
-                        <block type="dictIsEmpty" id="TFydD=%i0oHP%w%owL#I">
-                          <value name="DICT">
-                            <block type="variables_get" id="f$.y1;mE*V(n@3=YPlMw">
-                              <field name="VAR" id="1]O-/Q*K@Qxa-thh%hcM">interseccion</field>
-                            </block>
-                          </value>
-                        </block>
-                      </value>
+                <block type="eventHTMLElem" id="W]=yZizIiT!F6IYSBPtT">
+                  <field name="EVENT">mousemove</field>
+                  <field name="PARENT">FALSE</field>
+                  <value name="ID">
+                    <shadow type="text" id="ClOE_pSrS(Bkd9!OgEw4">
+                      <field name="TEXT">body</field>
+                    </shadow>
+                    <block type="DOMObjectSelector" id="in%kODchNgcL?-0w@~[C">
+                      <field name="DOM_OBJECT">WINDOW</field>
                     </block>
                   </value>
-                  <statement name="DO0">
-                    <block type="variables_set" id="Ne2Z*AF{ce@u]$0@??lX">
-                      <field name="VAR" id="*~^$MPt!EA]03c=M3+S!">posicion</field>
+                  <statement name="DO">
+                    <block type="variables_set" id="UxPV}pVE~W+o^c@$di:L">
+                      <field name="VAR" id="1]O-/Q*K@Qxa-thh%hcM">interseccion</field>
                       <value name="VALUE">
-                        <block type="dictGet" id="/^qI,{wdb3ZCwMC(e}08">
-                          <value name="DICT">
-                            <block type="lists_getIndex" id="w[KZemnJs(JInw%[a,bY">
-                              <mutation statement="false" at="true"></mutation>
-                              <field name="MODE">GET</field>
-                              <field name="WHERE">FROM_START</field>
-                              <value name="VALUE">
-                                <block type="variables_get" id="qQiJg`5Y:-3Eg+qR#dLh">
-                                  <field name="VAR" id="1]O-/Q*K@Qxa-thh%hcM">interseccion</field>
-                                </block>
-                              </value>
-                              <value name="AT">
-                                <block type="math_number" id="nsFSCJB7toq@iX{j3lim">
-                                  <field name="NUM">0</field>
-                                </block>
-                              </value>
+                        <block type="raycast" id="PGh7V=NsC+d56rUrRPdx">
+                          <value name="FROM">
+                            <block type="getActiveCamera" id="V0$acDz@/sf`(b{%@6Aa"></block>
+                          </value>
+                          <value name="DIRECTION">
+                            <block type="getCameraDirection" id="N!$C!2m?v*r,B/n}vS+D">
+                              <field name="MOUSE_TOUCH">TRUE</field>
+                              <field name="INVERTED">FALSE</field>
                             </block>
                           </value>
-                          <value name="KEY">
-                            <shadow type="text" id="o+F08NhoAPgQ.M4Q@ITZ">
-                              <field name="TEXT">point</field>
+                          <value name="INTERSECT_OBJS">
+                            <shadow type="objectList" id="~EhGBX$ZvMSy7hZ{sFAm">
+                              <field name="FIELDNAME">SM_Floor</field>
                             </shadow>
                           </value>
                         </block>
                       </value>
                       <next>
-                        <block type="setObjTransform" id="?+,+E/=lOsme3v1UMZE!">
-                          <mutation xmlns="http://www.w3.org/1999/xhtml" usevectorslot="false" useworldspace="false"></mutation>
-                          <field name="MODE">position</field>
-                          <field name="OFFSET">FALSE</field>
-                          <value name="TARGETOBJ">
-                            <shadow type="objectList" id="tny{5IQB27gyIb-vE?Cy">
-                              <field name="FIELDNAME">circulo</field>
-                            </shadow>
-                            <block type="objectList" id="LBCWI=bK]G?k?hm7+*xO">
-                              <field name="FIELDNAME">circulo</field>
-                            </block>
-                          </value>
-                          <value name="X">
-                            <block type="getVectorValue" id="gT[^c|$~R%`xS{81f;$6">
-                              <field name="VALUE_NAME">X</field>
-                              <value name="VECTOR">
-                                <block type="variables_get" id="{pn;RjJSe/i~6#bFE58:">
-                                  <field name="VAR" id="*~^$MPt!EA]03c=M3+S!">posicion</field>
-                                </block>
-                              </value>
-                            </block>
-                          </value>
-                          <value name="Y">
-                            <block type="getVectorValue" id="WiEXRfkDPA[q)QG^_|fH">
-                              <field name="VALUE_NAME">Y</field>
-                              <value name="VECTOR">
-                                <block type="variables_get" id="4g#LyhRC*-AYr{!u$#ek">
-                                  <field name="VAR" id="*~^$MPt!EA]03c=M3+S!">posicion</field>
-                                </block>
-                              </value>
-                            </block>
-                          </value>
-                          <value name="Z">
-                            <block type="math_number" id="R]^|WA*C2bp.)5#.IfY2">
-                              <field name="NUM">0.01</field>
-                            </block>
-                          </value>
-                        </block>
-                      </next>
-                    </block>
-                  </statement>
-                </block>
-              </next>
-            </block>
-          </statement>
-          <next>
-            <block type="variables_set" id="(9=vfXQ{`D`v)y.2dXVR">
-              <field name="VAR" id="MC}.|/48i81|5RxLHl.b">moving</field>
-              <value name="VALUE">
-                <block type="logic_boolean" id="lqrU{P9V#XtPJ#=0M^`K">
-                  <field name="BOOL">FALSE</field>
-                </block>
-              </value>
-              <next>
-                <block type="eventHTMLElem" id="W}MT{`}N,#)q](+aRpWj">
-                  <field name="EVENT">click</field>
-                  <field name="PARENT">TRUE</field>
-                  <value name="ID">
-                    <shadow type="text" id="M)NUR`}zdVbrN./PWxhF">
-                      <field name="TEXT">.recliner1</field>
-                    </shadow>
-                    <block type="variables_get" id="E%M1TZQ8Ch++nOlHuQ2n">
-                      <field name="VAR" id="*5{xTcJ@MGtH8F6Z]t%o">recliner</field>
-                    </block>
-                  </value>
-                  <statement name="DO">
-                    <block type="controls_if" id="lQj^88d=eXqYEJb4L`pe">
-                      <value name="IF0">
-                        <block type="logic_negate" id="^.Wx1ge6Td={:zJ6.z.O">
-                          <value name="BOOL">
-                            <block type="isSceneLoaded" id="tRBSSSb0MX)WY)eV{-gk">
-                              <value name="URL">
-                                <shadow type="text" id="5mlz^]xtKg)`o:cpl^/N">
-                                  <field name="TEXT">recliner.glb</field>
-                                </shadow>
-                              </value>
-                            </block>
-                          </value>
-                        </block>
-                      </value>
-                      <statement name="DO0">
-                        <block type="appendScene" id="=K}$X0gX*aW.QqEA|p|H">
-                          <mutation xmlns="http://www.w3.org/1999/xhtml" enableonprogress="false" enableonerror="false" loadcameras="false" loadlights="false" enablealias="false"></mutation>
-                          <value name="URL">
-                            <shadow type="text" id="v8k#.vwSq_ag%:ON/ln1">
-                              <field name="TEXT">recliner.glb</field>
-                            </shadow>
-                          </value>
-                          <statement name="DO">
-                            <block type="setObjTransform" id="Ixlsda1VTpl`$9JaP3]6">
-                              <mutation xmlns="http://www.w3.org/1999/xhtml" usevectorslot="false" useworldspace="false"></mutation>
-                              <field name="MODE">position</field>
-                              <field name="OFFSET">FALSE</field>
-                              <value name="TARGETOBJ">
-                                <shadow type="objectList" id="z{J}@^$q34*:Pvrxixt6">
-                                  <field name="FIELDNAME">reclinador</field>
-                                </shadow>
-                                <block type="text" id="!|~Qg)Bu`Fhx6s8=mN7-">
-                                  <field name="TEXT">recliner.glb</field>
-                                </block>
-                              </value>
-                              <value name="X">
-                                <block type="math_number" id="L5r^zEl-K6/1yE+jki:p">
-                                  <field name="NUM">2</field>
-                                </block>
-                              </value>
-                              <value name="Y">
-                                <block type="math_number" id="*FQW,~gN3Ns-:RX,)EhY">
-                                  <field name="NUM">1</field>
-                                </block>
-                              </value>
-                              <value name="Z">
-                                <block type="math_number" id="^2/Fe)LX|6,+eC2il)MF">
-                                  <field name="NUM">0</field>
-                                </block>
-                              </value>
-                            </block>
-                          </statement>
-                          <next>
-                            <block type="whenDraggedOver" id="4N3*RgNyIz^Bivei=;51" inline="true">
-                              <mutation xmlns="http://www.w3.org/1999/xhtml" adv_event_opts="true" do_start="false" do_drop="false"></mutation>
-                              <field name="X_RAY">FALSE</field>
-                              <field name="LEFT_BUTTON">TRUE</field>
-                              <field name="MIDDLE_BUTTON">FALSE</field>
-                              <field name="RIGHT_BUTTON">FALSE</field>
-                              <value name="VALUE">
-                                <shadow type="objectList" id="F%,zfsTVB1mtbZcs:s[L">
-                                  <field name="FIELDNAME">Leather_Recliner</field>
-                                </shadow>
-                              </value>
-                              <statement name="DO_MOVE">
-                                <block type="dragMove" id="(Wph),Q9xkKTQCjt_3/|">
-                                  <field name="MODE">XZ</field>
-                                  <value name="TARGETOBJ">
-                                    <shadow type="objectList" id="D;+@Mn9$=9L[[f!zp%Vd">
-                                      <field name="FIELDNAME">Leather_Recliner</field>
-                                    </shadow>
-                                  </value>
-                                </block>
-                              </statement>
-                            </block>
-                          </next>
-                        </block>
-                      </statement>
-                    </block>
-                  </statement>
-                  <next>
-                    <block type="Zjbcool-teleport/whenClicked2" id="EU@[C;2Uk4TB1H6bR],d">
-                      <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false" enableifmissed="false"></mutation>
-                      <field name="X_RAY">FALSE</field>
-                      <field name="DOUBLE_CLICK">FALSE</field>
-                      <field name="BT_0">TRUE</field>
-                      <field name="BT_1">TRUE</field>
-                      <field name="BT_2">TRUE</field>
-                      <field name="DELAY_FIELD">0.2</field>
-                      <value name="VALUE">
-                        <shadow type="objectList" id="k-G~i+a~kT]Y%eVOk9A[">
-                          <field name="FIELDNAME">Navigation</field>
-                        </shadow>
-                      </value>
-                      <statement name="DO">
-                        <block type="variables_set" id="Gj9d6gY#bmd%7W9`x-Nk">
-                          <field name="VAR" id="2u)`T]#TvqB^41gYn^6o">cameraX</field>
-                          <value name="VALUE">
-                            <block type="lists_getIndex" id=",bYX*Zdhh[@SJ=j@;+/a">
-                              <mutation statement="false" at="true"></mutation>
-                              <field name="MODE">GET</field>
-                              <field name="WHERE">FROM_START</field>
-                              <value name="VALUE">
-                                <block type="getCameraDirection" id="?N,cJm#SafE#SaY!s,Cv">
-                                  <field name="MOUSE_TOUCH">TRUE</field>
-                                  <field name="INVERTED">FALSE</field>
-                                </block>
-                              </value>
-                              <value name="AT">
-                                <block type="math_number" id="x!GO+VquCE:Lyhy2|j7Q">
-                                  <field name="NUM">0</field>
-                                </block>
-                              </value>
-                            </block>
-                          </value>
-                          <next>
-                            <block type="variables_set" id="a)7?iQAcrsx;/0!u8la@">
-                              <field name="VAR" id="S;,/I4i$AkOSgsy}rgup">cameraY</field>
-                              <value name="VALUE">
-                                <block type="lists_getIndex" id="@_v(k[%xb/7%9d4XlfM~">
-                                  <mutation statement="false" at="true"></mutation>
-                                  <field name="MODE">GET</field>
-                                  <field name="WHERE">FROM_START</field>
-                                  <value name="VALUE">
-                                    <block type="getCameraDirection" id="!xCKfNd!$bu7rSijbe]5">
-                                      <field name="MOUSE_TOUCH">TRUE</field>
-                                      <field name="INVERTED">FALSE</field>
-                                    </block>
-                                  </value>
-                                  <value name="AT">
-                                    <block type="math_number" id="S!^*oZuyzJyurmhT7b!I">
-                                      <field name="NUM">1</field>
+                        <block type="controls_if" id="d(%Dil15z+VNAz|}t$QI">
+                          <value name="IF0">
+                            <block type="logic_negate" id="3M87~XfT0UzP`B}|;Lr/">
+                              <value name="BOOL">
+                                <block type="dictIsEmpty" id="TFydD=%i0oHP%w%owL#I">
+                                  <value name="DICT">
+                                    <block type="variables_get" id="f$.y1;mE*V(n@3=YPlMw">
+                                      <field name="VAR" id="1]O-/Q*K@Qxa-thh%hcM">interseccion</field>
                                     </block>
                                   </value>
                                 </block>
                               </value>
-                              <next>
-                                <block type="variables_set" id="0}DJO-]:#v]|S0^Z{*^[">
-                                  <field name="VAR" id="T[NM2:8W:3e72ji}BVr5">cameraZ</field>
-                                  <value name="VALUE">
-                                    <block type="lists_getIndex" id="@iS,V52{ew;/Sg|B4ig#">
+                            </block>
+                          </value>
+                          <statement name="DO0">
+                            <block type="variables_set" id="Ne2Z*AF{ce@u]$0@??lX">
+                              <field name="VAR" id="*~^$MPt!EA]03c=M3+S!">posicion</field>
+                              <value name="VALUE">
+                                <block type="dictGet" id="/^qI,{wdb3ZCwMC(e}08">
+                                  <value name="DICT">
+                                    <block type="lists_getIndex" id="w[KZemnJs(JInw%[a,bY">
                                       <mutation statement="false" at="true"></mutation>
                                       <field name="MODE">GET</field>
                                       <field name="WHERE">FROM_START</field>
                                       <value name="VALUE">
-                                        <block type="getCameraDirection" id="QAoFP}ofROT)bUOnx@^x">
-                                          <field name="MOUSE_TOUCH">TRUE</field>
-                                          <field name="INVERTED">FALSE</field>
+                                        <block type="variables_get" id="qQiJg`5Y:-3Eg+qR#dLh">
+                                          <field name="VAR" id="1]O-/Q*K@Qxa-thh%hcM">interseccion</field>
                                         </block>
                                       </value>
                                       <value name="AT">
-                                        <block type="math_number" id="3}l5+Iyq!,{ezwbqmCw?">
-                                          <field name="NUM">2</field>
+                                        <block type="math_number" id="nsFSCJB7toq@iX{j3lim">
+                                          <field name="NUM">0</field>
                                         </block>
                                       </value>
                                     </block>
                                   </value>
-                                  <next>
-                                    <block type="tweenCameraExt" id="cOjN@.@@3~s1Dmo@0S?;" inline="false">
-                                      <mutation xmlns="http://www.w3.org/1999/xhtml" whenfinishedslot="false"></mutation>
-                                      <field name="MOVEMENT_TYPE">LINEAR</field>
-                                      <value name="POSITION">
-                                        <block type="Zjbcool-teleport/pickedObject2" id=")M/t9t11_HKHV@5MZugl">
-                                          <field name="OPTION">OBJECT</field>
-                                        </block>
-                                      </value>
-                                      <value name="LOOKAT">
-                                        <block type="lists_create_with" id="xx?d_SkV]sIouJu!-o%,">
-                                          <mutation items="3"></mutation>
-                                          <value name="ADD0">
-                                            <block type="variables_get" id="JiXM/eY,x9g+AqCE@1Ta">
-                                              <field name="VAR" id="2u)`T]#TvqB^41gYn^6o">cameraX</field>
-                                            </block>
-                                          </value>
-                                          <value name="ADD1">
-                                            <block type="variables_get" id="@g*KdD5D3hjip)dp(Nk_">
-                                              <field name="VAR" id="S;,/I4i$AkOSgsy}rgup">cameraY</field>
-                                            </block>
-                                          </value>
-                                          <value name="ADD2">
-                                            <block type="variables_get" id="SHE_tM@jo}4;Jgqa[@s6">
-                                              <field name="VAR" id="T[NM2:8W:3e72ji}BVr5">cameraZ</field>
-                                            </block>
-                                          </value>
-                                        </block>
-                                      </value>
-                                      <value name="DURATION">
-                                        <shadow type="math_number" id="H=f/1fhdaPuW%s%m8w^z">
-                                          <field name="NUM">2</field>
-                                        </shadow>
-                                      </value>
-                                      <next>
-                                        <block type="callJSFunction" id="#)JM5m*u9je_qLpXtVe0">
-                                          <mutation xmlns="http://www.w3.org/1999/xhtml" name="vanishTitle"></mutation>
-                                          <field name="NAME">vanishTitle</field>
-                                          <next>
-                                            <block type="outline" id="$9_ubqvn*zTsdY-c5Gvj">
-                                              <field name="DO_WHAT">DISABLE</field>
-                                              <value name="TARGET">
-                                                <shadow type="objectList" id=";jDO#S]Li@ll]c7/ht}@">
-                                                  <field name="FIELDNAME">SM_Sofa</field>
-                                                </shadow>
-                                              </value>
-                                              <next>
-                                                <block type="outline" id="3tX15Z@6BcNX]ighxQMb">
-                                                  <field name="DO_WHAT">DISABLE</field>
-                                                  <value name="TARGET">
-                                                    <shadow type="objectList" id="{O};9_^2WyD,8vi6$Fo2">
-                                                      <field name="FIELDNAME">SM_Kitchen</field>
-                                                    </shadow>
-                                                  </value>
-                                                </block>
-                                              </next>
-                                            </block>
-                                          </next>
-                                        </block>
-                                      </next>
+                                  <value name="KEY">
+                                    <shadow type="text" id="o+F08NhoAPgQ.M4Q@ITZ">
+                                      <field name="TEXT">point</field>
+                                    </shadow>
+                                  </value>
+                                </block>
+                              </value>
+                              <next>
+                                <block type="setObjTransform" id="?+,+E/=lOsme3v1UMZE!" disabled="true">
+                                  <mutation xmlns="http://www.w3.org/1999/xhtml" usevectorslot="false" useworldspace="false"></mutation>
+                                  <field name="MODE">position</field>
+                                  <field name="OFFSET">FALSE</field>
+                                  <value name="TARGETOBJ">
+                                    <shadow type="objectList" id="tny{5IQB27gyIb-vE?Cy">
+                                      <field name="FIELDNAME">circulo</field>
+                                    </shadow>
+                                    <block type="objectList" id="LBCWI=bK]G?k?hm7+*xO">
+                                      <field name="FIELDNAME">circulo</field>
                                     </block>
-                                  </next>
+                                  </value>
+                                  <value name="X">
+                                    <block type="getVectorValue" id="gT[^c|$~R%`xS{81f;$6">
+                                      <field name="VALUE_NAME">X</field>
+                                      <value name="VECTOR">
+                                        <block type="variables_get" id="{pn;RjJSe/i~6#bFE58:">
+                                          <field name="VAR" id="*~^$MPt!EA]03c=M3+S!">posicion</field>
+                                        </block>
+                                      </value>
+                                    </block>
+                                  </value>
+                                  <value name="Y">
+                                    <block type="getVectorValue" id="WiEXRfkDPA[q)QG^_|fH">
+                                      <field name="VALUE_NAME">Y</field>
+                                      <value name="VECTOR">
+                                        <block type="variables_get" id="4g#LyhRC*-AYr{!u$#ek">
+                                          <field name="VAR" id="*~^$MPt!EA]03c=M3+S!">posicion</field>
+                                        </block>
+                                      </value>
+                                    </block>
+                                  </value>
+                                  <value name="Z">
+                                    <block type="math_number" id="R]^|WA*C2bp.)5#.IfY2">
+                                      <field name="NUM">0.01</field>
+                                    </block>
+                                  </value>
                                 </block>
                               </next>
                             </block>
-                          </next>
+                          </statement>
                         </block>
-                      </statement>
+                      </next>
+                    </block>
+                  </statement>
+                  <next>
+                    <block type="variables_set" id="(9=vfXQ{`D`v)y.2dXVR">
+                      <field name="VAR" id="MC}.|/48i81|5RxLHl.b">moving</field>
+                      <value name="VALUE">
+                        <block type="logic_boolean" id="lqrU{P9V#XtPJ#=0M^`K">
+                          <field name="BOOL">FALSE</field>
+                        </block>
+                      </value>
                       <next>
-                        <block type="Zjbcool-teleport/flyingControls" id=":bTzKVl-trE44Td!B.09">
-                          <field name="OPTION">enableDamping</field>
-                          <value name="VALUE">
-                            <shadow type="logic_boolean" id="u6m+nk8H{r:dfwn9)=y?">
-                              <field name="BOOL">TRUE</field>
+                        <block type="eventHTMLElem" id="W}MT{`}N,#)q](+aRpWj">
+                          <field name="EVENT">click</field>
+                          <field name="PARENT">TRUE</field>
+                          <value name="ID">
+                            <shadow type="text" id="M)NUR`}zdVbrN./PWxhF">
+                              <field name="TEXT">.recliner1</field>
                             </shadow>
+                            <block type="variables_get" id="E%M1TZQ8Ch++nOlHuQ2n">
+                              <field name="VAR" id="*5{xTcJ@MGtH8F6Z]t%o">recliner</field>
+                            </block>
                           </value>
-                          <next>
-                            <block type="whenDraggedOver" id="+/+_o:o6;vHvK[g:}K^y" inline="true">
-                              <mutation xmlns="http://www.w3.org/1999/xhtml" adv_event_opts="true" do_start="false" do_drop="false"></mutation>
-                              <field name="X_RAY">FALSE</field>
-                              <field name="LEFT_BUTTON">FALSE</field>
-                              <field name="MIDDLE_BUTTON">FALSE</field>
-                              <field name="RIGHT_BUTTON">TRUE</field>
-                              <value name="VALUE">
-                                <shadow type="objectList" id="@)Eq,N=|jmQ/;O2Jx5-K">
-                                  <field name="FIELDNAME">Leather_Recliner</field>
-                                </shadow>
-                              </value>
-                              <statement name="DO_MOVE">
-                                <block type="dragRotate" id="VlLS=qdYr%.-7):n%gak">
-                                  <mutation xmlns="http://www.w3.org/1999/xhtml" enablespace="false"></mutation>
-                                  <field name="AXIS">Z</field>
-                                  <field name="SPACE_TYPE">PARENT</field>
-                                  <value name="TARGETOBJ">
-                                    <shadow type="objectList" id="Bq19})3QkBtJy3~Opeiu">
-                                      <field name="FIELDNAME">Leather_Recliner</field>
-                                    </shadow>
-                                  </value>
-                                </block>
-                              </statement>
-                              <next>
-                                <block type="eventHTMLElem" id=",]*MNlL~a$Xo8kknjgTx">
-                                  <field name="EVENT">click</field>
-                                  <field name="PARENT">TRUE</field>
-                                  <value name="ID">
-                                    <shadow type="text" id="d+1MO8|;zfFpChA1}53_">
-                                      <field name="TEXT">.recliner1</field>
-                                    </shadow>
-                                    <block type="variables_get" id="m^Ue@gnC8}ha3m?4;`qf">
-                                      <field name="VAR" id="f8cz=)azh@EKgQtA%n!?">rotation_recliner</field>
+                          <statement name="DO">
+                            <block type="controls_if" id="lQj^88d=eXqYEJb4L`pe">
+                              <value name="IF0">
+                                <block type="logic_negate" id="^.Wx1ge6Td={:zJ6.z.O">
+                                  <value name="BOOL">
+                                    <block type="isSceneLoaded" id="tRBSSSb0MX)WY)eV{-gk">
+                                      <value name="URL">
+                                        <shadow type="text" id="5mlz^]xtKg)`o:cpl^/N">
+                                          <field name="TEXT">recliner.glb</field>
+                                        </shadow>
+                                      </value>
                                     </block>
                                   </value>
-                                  <next>
-                                    <block type="eventHTMLElem" id="4q%5Wop1:R_Wvob.L2-S">
-                                      <field name="EVENT">click</field>
-                                      <field name="PARENT">TRUE</field>
-                                      <value name="ID">
-                                        <shadow type="text" id="G^]Q/BJ1qM]nN01b_joF">
-                                          <field name="TEXT">.recliner1</field>
+                                </block>
+                              </value>
+                              <statement name="DO0">
+                                <block type="appendScene" id="=K}$X0gX*aW.QqEA|p|H">
+                                  <mutation xmlns="http://www.w3.org/1999/xhtml" enableonprogress="false" enableonerror="false" loadcameras="false" loadlights="false" enablealias="false"></mutation>
+                                  <value name="URL">
+                                    <shadow type="text" id="v8k#.vwSq_ag%:ON/ln1">
+                                      <field name="TEXT">recliner.glb</field>
+                                    </shadow>
+                                  </value>
+                                  <statement name="DO">
+                                    <block type="setObjTransform" id="Ixlsda1VTpl`$9JaP3]6">
+                                      <mutation xmlns="http://www.w3.org/1999/xhtml" usevectorslot="false" useworldspace="false"></mutation>
+                                      <field name="MODE">position</field>
+                                      <field name="OFFSET">FALSE</field>
+                                      <value name="TARGETOBJ">
+                                        <shadow type="objectList" id="z{J}@^$q34*:Pvrxixt6">
+                                          <field name="FIELDNAME">reclinador</field>
                                         </shadow>
-                                        <block type="variables_get" id="z95B38(XM#1RaO7pv@jn">
-                                          <field name="VAR" id="k{cYe^`%A`]-J)*a:~mj">delete_recliner</field>
+                                        <block type="text" id="!|~Qg)Bu`Fhx6s8=mN7-">
+                                          <field name="TEXT">recliner.glb</field>
                                         </block>
                                       </value>
-                                      <statement name="DO">
-                                        <block type="controls_if" id="(M#F2SueKCo`vemBQf:3">
-                                          <value name="IF0">
-                                            <block type="isSceneLoaded" id="GTC+I8rfHRhHF?|_9v0C">
-                                              <value name="URL">
-                                                <shadow type="text" id="C*3(rdg=}Lc#1qjZwy@r">
-                                                  <field name="TEXT">recliner.glb</field>
-                                                </shadow>
-                                              </value>
-                                            </block>
+                                      <value name="X">
+                                        <block type="math_number" id="L5r^zEl-K6/1yE+jki:p">
+                                          <field name="NUM">2</field>
+                                        </block>
+                                      </value>
+                                      <value name="Y">
+                                        <block type="math_number" id="*FQW,~gN3Ns-:RX,)EhY">
+                                          <field name="NUM">1</field>
+                                        </block>
+                                      </value>
+                                      <value name="Z">
+                                        <block type="math_number" id="^2/Fe)LX|6,+eC2il)MF">
+                                          <field name="NUM">0</field>
+                                        </block>
+                                      </value>
+                                    </block>
+                                  </statement>
+                                  <next>
+                                    <block type="whenDraggedOver" id="4N3*RgNyIz^Bivei=;51" inline="true">
+                                      <mutation xmlns="http://www.w3.org/1999/xhtml" adv_event_opts="true" do_start="false" do_drop="false"></mutation>
+                                      <field name="X_RAY">FALSE</field>
+                                      <field name="LEFT_BUTTON">TRUE</field>
+                                      <field name="MIDDLE_BUTTON">FALSE</field>
+                                      <field name="RIGHT_BUTTON">FALSE</field>
+                                      <value name="VALUE">
+                                        <shadow type="objectList" id="F%,zfsTVB1mtbZcs:s[L">
+                                          <field name="FIELDNAME">Leather_Recliner</field>
+                                        </shadow>
+                                      </value>
+                                      <statement name="DO_MOVE">
+                                        <block type="dragMove" id="(Wph),Q9xkKTQCjt_3/|">
+                                          <field name="MODE">XZ</field>
+                                          <value name="TARGETOBJ">
+                                            <shadow type="objectList" id="D;+@Mn9$=9L[[f!zp%Vd">
+                                              <field name="FIELDNAME">Leather_Recliner</field>
+                                            </shadow>
                                           </value>
-                                          <statement name="DO0">
-                                            <block type="unloadScene" id="bzt/S0OqOF/V(}88W{^R">
-                                              <value name="URL">
-                                                <shadow type="text" id="bG-!^s%mGqi`u[bqJ%`#">
-                                                  <field name="TEXT">recliner.glb</field>
-                                                </shadow>
-                                              </value>
-                                            </block>
-                                          </statement>
                                         </block>
                                       </statement>
-                                      <next>
-                                        <block type="eventHTMLElem" id="V`Vs[}Cp[p?3dMZ(:k3p">
-                                          <field name="EVENT">click</field>
-                                          <field name="PARENT">TRUE</field>
-                                          <value name="ID">
-                                            <shadow type="text" id="JUhFF0HLQrojU!*9LNDn">
-                                              <field name="TEXT"></field>
-                                            </shadow>
-                                            <block type="variables_get" id="#1Ih43uN,A%T2smGB~TJ">
-                                              <field name="VAR" id="+F5Ey$R@~7!J9^QK:yjQ">screen_shot</field>
-                                            </block>
-                                          </value>
-                                          <statement name="DO">
-                                            <block type="downloadFile" id="9=-{gL-A1;lJ9l61)FQz">
-                                              <value name="CONTENTS">
-                                                <shadow type="text" id="IA1e*BB|XOnwf9z!sVBB">
-                                                  <field name="TEXT">data:,</field>
-                                                </shadow>
-                                                <block type="takeScreenshot" id="4fAXsODC:rfUAQDN1z4p">
-                                                  <field name="TYPE">png</field>
-                                                </block>
-                                              </value>
-                                              <value name="FILENAME">
-                                                <shadow type="text" id="BUF4XU:KCmH_7?H@{;9P">
-                                                  <field name="TEXT">apartment.png</field>
-                                                </shadow>
-                                              </value>
-                                            </block>
-                                          </statement>
-                                          <next>
-                                            <block type="eventHTMLElem" id="JVEcLu8}~(J*pkqvF/~Z">
-                                              <field name="EVENT">click</field>
-                                              <field name="PARENT">TRUE</field>
-                                              <value name="ID">
-                                                <shadow type="text" id="Z|`Y4TBg/W,aB7x*LOWq">
-                                                  <field name="TEXT"></field>
-                                                </shadow>
-                                                <block type="variables_get" id="Msf~oVsVM(+G?!x{_kV-">
-                                                  <field name="VAR" id="pEL5$=dd,.Radi@:qV2v">dowload</field>
-                                                </block>
-                                              </value>
-                                              <statement name="DO">
-                                                <block type="downloadFile" id="-CMs*+,:J+}w2t`jsW/8">
-                                                  <value name="CONTENTS">
-                                                    <shadow type="text" id="}6x,#@CPgwm6?~=[]+Cl">
-                                                      <field name="TEXT">data:,</field>
-                                                    </shadow>
-                                                    <block type="exportToGLTF" id="vT%05*?O[n2geZq8G.2@">
-                                                      <field name="ONLY_VISIBLE">TRUE</field>
-                                                      <field name="EXPORT_ANIMS">TRUE</field>
-                                                      <field name="BINARY">FALSE</field>
-                                                      <value name="OBJ_NAME">
-                                                        <shadow type="objectList" id="Y;JM{(v_.c!JBgNvCL11">
-                                                          <field name="FIELDNAME">&lt;none&gt;</field>
-                                                        </shadow>
-                                                        <block type="groupList" id="z1Z2F~;Beb490nvWCHX[">
-                                                          <field name="FIELDNAME">Main Scene</field>
-                                                        </block>
-                                                      </value>
-                                                    </block>
-                                                  </value>
-                                                  <value name="FILENAME">
-                                                    <shadow type="text" id="?qRNML#F0ESt^-df_=uC">
-                                                      <field name="TEXT">depa.gltf</field>
-                                                    </shadow>
-                                                  </value>
-                                                </block>
-                                              </statement>
-                                              <next>
-                                                <block type="eventHTMLElem" id="~zs84.#Rt/3bv#lC-IH=">
-                                                  <field name="EVENT">click</field>
-                                                  <field name="PARENT">TRUE</field>
-                                                  <value name="ID">
-                                                    <shadow type="text" id="L@40iixfOvgfsl%jc:3o">
-                                                      <field name="TEXT"></field>
-                                                    </shadow>
-                                                    <block type="variables_get" id="GsjtkFk07d@Af4VI)Y+U">
-                                                      <field name="VAR" id="n$n?f4E7QKJ5V_WKH/w9">upload</field>
-                                                    </block>
-                                                  </value>
-                                                  <statement name="DO">
-                                                    <block type="loadFile" id="+}R.)o[tVsNng`@g8WTe">
-                                                      <mutation xmlns="http://www.w3.org/1999/xhtml" disablecaching="false"></mutation>
-                                                      <value name="URL">
-                                                        <shadow type="text" id="34VW:;l/N9v.KQ$l,8R4">
-                                                          <field name="TEXT">./depa.json</field>
-                                                        </shadow>
-                                                      </value>
-                                                      <statement name="DO">
-                                                        <block type="variables_set" id="!()o~/b2j!yTt[i}NPUG">
-                                                          <field name="VAR" id=";ziVG6w53qZ3(~]nPSP7">json</field>
-                                                          <value name="VALUE">
-                                                            <block type="readJSON" id="P-2gP%bDowlb2#k=9pdf">
-                                                              <value name="TEXT">
-                                                                <block type="loadedFile" id="DNO=DJ+4V~9wfM,FF`Fa"></block>
-                                                              </value>
-                                                            </block>
-                                                          </value>
-                                                          <next>
-                                                            <block type="console.log" id="ptbS~vc3Y=ne^k,VVAtm">
-                                                              <value name="VALUE">
-                                                                <shadow type="text" id="8Z:|%CTui|PyB}$BU(N^">
-                                                                  <field name="TEXT">Hello, Verge!</field>
-                                                                </shadow>
-                                                                <block type="variables_get" id="[7HD{/82M!BWU%HS4g$Y">
-                                                                  <field name="VAR" id=";ziVG6w53qZ3(~]nPSP7">json</field>
-                                                                </block>
-                                                              </value>
-                                                            </block>
-                                                          </next>
-                                                        </block>
-                                                      </statement>
-                                                    </block>
-                                                  </statement>
-                                                </block>
-                                              </next>
-                                            </block>
-                                          </next>
-                                        </block>
-                                      </next>
                                     </block>
                                   </next>
                                 </block>
-                              </next>
+                              </statement>
                             </block>
-                          </next>
+                          </statement>
                         </block>
                       </next>
                     </block>
@@ -4029,6 +3638,395 @@
                                       <value name="TARGET">
                                         <shadow type="allObjectList" id="8)aOr}wZ9[b8Nm=*KB,@"></shadow>
                                       </value>
+                                    </block>
+                                  </next>
+                                </block>
+                              </next>
+                            </block>
+                          </next>
+                        </block>
+                      </next>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </next>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="Zjbcool-teleport/whenClicked2" id="EU@[C;2Uk4TB1H6bR],d" x="-2430" y="1230">
+      <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false" enableifmissed="false"></mutation>
+      <field name="X_RAY">FALSE</field>
+      <field name="DOUBLE_CLICK">FALSE</field>
+      <field name="BT_0">TRUE</field>
+      <field name="BT_1">TRUE</field>
+      <field name="BT_2">TRUE</field>
+      <field name="DELAY_FIELD">0.2</field>
+      <value name="VALUE">
+        <shadow type="objectList" id="k-G~i+a~kT]Y%eVOk9A[">
+          <field name="FIELDNAME">Navigation</field>
+        </shadow>
+      </value>
+      <statement name="DO">
+        <block type="variables_set" id="Gj9d6gY#bmd%7W9`x-Nk">
+          <field name="VAR" id="2u)`T]#TvqB^41gYn^6o">cameraX</field>
+          <value name="VALUE">
+            <block type="lists_getIndex" id=",bYX*Zdhh[@SJ=j@;+/a">
+              <mutation statement="false" at="true"></mutation>
+              <field name="MODE">GET</field>
+              <field name="WHERE">FROM_START</field>
+              <value name="VALUE">
+                <block type="getCameraDirection" id="?N,cJm#SafE#SaY!s,Cv">
+                  <field name="MOUSE_TOUCH">TRUE</field>
+                  <field name="INVERTED">FALSE</field>
+                </block>
+              </value>
+              <value name="AT">
+                <block type="math_number" id="x!GO+VquCE:Lyhy2|j7Q">
+                  <field name="NUM">0</field>
+                </block>
+              </value>
+            </block>
+          </value>
+          <next>
+            <block type="variables_set" id="a)7?iQAcrsx;/0!u8la@">
+              <field name="VAR" id="S;,/I4i$AkOSgsy}rgup">cameraY</field>
+              <value name="VALUE">
+                <block type="lists_getIndex" id="@_v(k[%xb/7%9d4XlfM~">
+                  <mutation statement="false" at="true"></mutation>
+                  <field name="MODE">GET</field>
+                  <field name="WHERE">FROM_START</field>
+                  <value name="VALUE">
+                    <block type="getCameraDirection" id="!xCKfNd!$bu7rSijbe]5">
+                      <field name="MOUSE_TOUCH">TRUE</field>
+                      <field name="INVERTED">FALSE</field>
+                    </block>
+                  </value>
+                  <value name="AT">
+                    <block type="math_number" id="S!^*oZuyzJyurmhT7b!I">
+                      <field name="NUM">1</field>
+                    </block>
+                  </value>
+                </block>
+              </value>
+              <next>
+                <block type="variables_set" id="0}DJO-]:#v]|S0^Z{*^[">
+                  <field name="VAR" id="T[NM2:8W:3e72ji}BVr5">cameraZ</field>
+                  <value name="VALUE">
+                    <block type="lists_getIndex" id="@iS,V52{ew;/Sg|B4ig#">
+                      <mutation statement="false" at="true"></mutation>
+                      <field name="MODE">GET</field>
+                      <field name="WHERE">FROM_START</field>
+                      <value name="VALUE">
+                        <block type="getCameraDirection" id="QAoFP}ofROT)bUOnx@^x">
+                          <field name="MOUSE_TOUCH">TRUE</field>
+                          <field name="INVERTED">FALSE</field>
+                        </block>
+                      </value>
+                      <value name="AT">
+                        <block type="math_number" id="3}l5+Iyq!,{ezwbqmCw?">
+                          <field name="NUM">2</field>
+                        </block>
+                      </value>
+                    </block>
+                  </value>
+                  <next>
+                    <block type="tweenCameraExt" id="cOjN@.@@3~s1Dmo@0S?;" inline="false">
+                      <mutation xmlns="http://www.w3.org/1999/xhtml" whenfinishedslot="false"></mutation>
+                      <field name="MOVEMENT_TYPE">LINEAR</field>
+                      <value name="POSITION">
+                        <block type="Zjbcool-teleport/pickedObject2" id=")M/t9t11_HKHV@5MZugl">
+                          <field name="OPTION">OBJECT</field>
+                        </block>
+                      </value>
+                      <value name="LOOKAT">
+                        <block type="lists_create_with" id="xx?d_SkV]sIouJu!-o%,">
+                          <mutation items="3"></mutation>
+                          <value name="ADD0">
+                            <block type="variables_get" id="JiXM/eY,x9g+AqCE@1Ta">
+                              <field name="VAR" id="2u)`T]#TvqB^41gYn^6o">cameraX</field>
+                            </block>
+                          </value>
+                          <value name="ADD1">
+                            <block type="variables_get" id="@g*KdD5D3hjip)dp(Nk_">
+                              <field name="VAR" id="S;,/I4i$AkOSgsy}rgup">cameraY</field>
+                            </block>
+                          </value>
+                          <value name="ADD2">
+                            <block type="variables_get" id="SHE_tM@jo}4;Jgqa[@s6">
+                              <field name="VAR" id="T[NM2:8W:3e72ji}BVr5">cameraZ</field>
+                            </block>
+                          </value>
+                        </block>
+                      </value>
+                      <value name="DURATION">
+                        <shadow type="math_number" id="H=f/1fhdaPuW%s%m8w^z">
+                          <field name="NUM">2</field>
+                        </shadow>
+                      </value>
+                      <next>
+                        <block type="callJSFunction" id="#)JM5m*u9je_qLpXtVe0">
+                          <mutation xmlns="http://www.w3.org/1999/xhtml" name="vanishTitle"></mutation>
+                          <field name="NAME">vanishTitle</field>
+                          <next>
+                            <block type="outline" id="$9_ubqvn*zTsdY-c5Gvj">
+                              <field name="DO_WHAT">DISABLE</field>
+                              <value name="TARGET">
+                                <shadow type="objectList" id=";jDO#S]Li@ll]c7/ht}@">
+                                  <field name="FIELDNAME">SM_Sofa</field>
+                                </shadow>
+                              </value>
+                              <next>
+                                <block type="outline" id="3tX15Z@6BcNX]ighxQMb">
+                                  <field name="DO_WHAT">DISABLE</field>
+                                  <value name="TARGET">
+                                    <shadow type="objectList" id="{O};9_^2WyD,8vi6$Fo2">
+                                      <field name="FIELDNAME">SM_Kitchen</field>
+                                    </shadow>
+                                  </value>
+                                </block>
+                              </next>
+                            </block>
+                          </next>
+                        </block>
+                      </next>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </statement>
+      <next>
+        <block type="Zjbcool-teleport/flyingControls" id=":bTzKVl-trE44Td!B.09">
+          <field name="OPTION">enableDamping</field>
+          <value name="VALUE">
+            <shadow type="logic_boolean" id="u6m+nk8H{r:dfwn9)=y?">
+              <field name="BOOL">TRUE</field>
+            </shadow>
+          </value>
+          <next>
+            <block type="whenDraggedOver" id="+/+_o:o6;vHvK[g:}K^y" inline="true">
+              <mutation xmlns="http://www.w3.org/1999/xhtml" adv_event_opts="true" do_start="false" do_drop="false"></mutation>
+              <field name="X_RAY">FALSE</field>
+              <field name="LEFT_BUTTON">FALSE</field>
+              <field name="MIDDLE_BUTTON">FALSE</field>
+              <field name="RIGHT_BUTTON">TRUE</field>
+              <value name="VALUE">
+                <shadow type="objectList" id="@)Eq,N=|jmQ/;O2Jx5-K">
+                  <field name="FIELDNAME">Leather_Recliner</field>
+                </shadow>
+              </value>
+              <statement name="DO_MOVE">
+                <block type="dragRotate" id="VlLS=qdYr%.-7):n%gak">
+                  <mutation xmlns="http://www.w3.org/1999/xhtml" enablespace="false"></mutation>
+                  <field name="AXIS">Z</field>
+                  <field name="SPACE_TYPE">PARENT</field>
+                  <value name="TARGETOBJ">
+                    <shadow type="objectList" id="Bq19})3QkBtJy3~Opeiu">
+                      <field name="FIELDNAME">Leather_Recliner</field>
+                    </shadow>
+                  </value>
+                </block>
+              </statement>
+              <next>
+                <block type="eventHTMLElem" id=",]*MNlL~a$Xo8kknjgTx">
+                  <field name="EVENT">click</field>
+                  <field name="PARENT">TRUE</field>
+                  <value name="ID">
+                    <shadow type="text" id="d+1MO8|;zfFpChA1}53_">
+                      <field name="TEXT">.recliner1</field>
+                    </shadow>
+                    <block type="variables_get" id="m^Ue@gnC8}ha3m?4;`qf">
+                      <field name="VAR" id="f8cz=)azh@EKgQtA%n!?">rotation_recliner</field>
+                    </block>
+                  </value>
+                  <next>
+                    <block type="eventHTMLElem" id="4q%5Wop1:R_Wvob.L2-S">
+                      <field name="EVENT">click</field>
+                      <field name="PARENT">TRUE</field>
+                      <value name="ID">
+                        <shadow type="text" id="G^]Q/BJ1qM]nN01b_joF">
+                          <field name="TEXT">.recliner1</field>
+                        </shadow>
+                        <block type="variables_get" id="z95B38(XM#1RaO7pv@jn">
+                          <field name="VAR" id="k{cYe^`%A`]-J)*a:~mj">delete_recliner</field>
+                        </block>
+                      </value>
+                      <statement name="DO">
+                        <block type="controls_if" id="(M#F2SueKCo`vemBQf:3">
+                          <value name="IF0">
+                            <block type="isSceneLoaded" id="GTC+I8rfHRhHF?|_9v0C">
+                              <value name="URL">
+                                <shadow type="text" id="C*3(rdg=}Lc#1qjZwy@r">
+                                  <field name="TEXT">recliner.glb</field>
+                                </shadow>
+                              </value>
+                            </block>
+                          </value>
+                          <statement name="DO0">
+                            <block type="unloadScene" id="bzt/S0OqOF/V(}88W{^R">
+                              <value name="URL">
+                                <shadow type="text" id="bG-!^s%mGqi`u[bqJ%`#">
+                                  <field name="TEXT">recliner.glb</field>
+                                </shadow>
+                              </value>
+                            </block>
+                          </statement>
+                        </block>
+                      </statement>
+                      <next>
+                        <block type="eventHTMLElem" id="V`Vs[}Cp[p?3dMZ(:k3p">
+                          <field name="EVENT">click</field>
+                          <field name="PARENT">TRUE</field>
+                          <value name="ID">
+                            <shadow type="text" id="JUhFF0HLQrojU!*9LNDn">
+                              <field name="TEXT"></field>
+                            </shadow>
+                            <block type="variables_get" id="#1Ih43uN,A%T2smGB~TJ">
+                              <field name="VAR" id="+F5Ey$R@~7!J9^QK:yjQ">screen_shot</field>
+                            </block>
+                          </value>
+                          <statement name="DO">
+                            <block type="downloadFile" id="9=-{gL-A1;lJ9l61)FQz">
+                              <value name="CONTENTS">
+                                <shadow type="text" id="IA1e*BB|XOnwf9z!sVBB">
+                                  <field name="TEXT">data:,</field>
+                                </shadow>
+                                <block type="takeScreenshot" id="4fAXsODC:rfUAQDN1z4p">
+                                  <field name="TYPE">png</field>
+                                </block>
+                              </value>
+                              <value name="FILENAME">
+                                <shadow type="text" id="BUF4XU:KCmH_7?H@{;9P">
+                                  <field name="TEXT">apartment.png</field>
+                                </shadow>
+                              </value>
+                            </block>
+                          </statement>
+                          <next>
+                            <block type="eventHTMLElem" id="JVEcLu8}~(J*pkqvF/~Z">
+                              <field name="EVENT">click</field>
+                              <field name="PARENT">TRUE</field>
+                              <value name="ID">
+                                <shadow type="text" id="Z|`Y4TBg/W,aB7x*LOWq">
+                                  <field name="TEXT"></field>
+                                </shadow>
+                                <block type="variables_get" id="Msf~oVsVM(+G?!x{_kV-">
+                                  <field name="VAR" id="pEL5$=dd,.Radi@:qV2v">dowload</field>
+                                </block>
+                              </value>
+                              <statement name="DO">
+                                <block type="downloadFile" id="-CMs*+,:J+}w2t`jsW/8">
+                                  <value name="CONTENTS">
+                                    <shadow type="text" id="}6x,#@CPgwm6?~=[]+Cl">
+                                      <field name="TEXT">data:,</field>
+                                    </shadow>
+                                    <block type="exportToGLTF" id="vT%05*?O[n2geZq8G.2@">
+                                      <field name="ONLY_VISIBLE">TRUE</field>
+                                      <field name="EXPORT_ANIMS">TRUE</field>
+                                      <field name="BINARY">FALSE</field>
+                                      <value name="OBJ_NAME">
+                                        <shadow type="objectList" id="Y;JM{(v_.c!JBgNvCL11">
+                                          <field name="FIELDNAME">&lt;none&gt;</field>
+                                        </shadow>
+                                        <block type="groupList" id="z1Z2F~;Beb490nvWCHX[">
+                                          <field name="FIELDNAME">Main Scene</field>
+                                        </block>
+                                      </value>
+                                    </block>
+                                  </value>
+                                  <value name="FILENAME">
+                                    <shadow type="text" id="?qRNML#F0ESt^-df_=uC">
+                                      <field name="TEXT">depa.gltf</field>
+                                    </shadow>
+                                  </value>
+                                </block>
+                              </statement>
+                              <next>
+                                <block type="eventHTMLElem" id="~zs84.#Rt/3bv#lC-IH=">
+                                  <field name="EVENT">click</field>
+                                  <field name="PARENT">TRUE</field>
+                                  <value name="ID">
+                                    <shadow type="text" id="L@40iixfOvgfsl%jc:3o">
+                                      <field name="TEXT"></field>
+                                    </shadow>
+                                    <block type="variables_get" id="GsjtkFk07d@Af4VI)Y+U">
+                                      <field name="VAR" id="n$n?f4E7QKJ5V_WKH/w9">upload</field>
+                                    </block>
+                                  </value>
+                                  <statement name="DO">
+                                    <block type="loadFile" id="+}R.)o[tVsNng`@g8WTe">
+                                      <mutation xmlns="http://www.w3.org/1999/xhtml" disablecaching="false"></mutation>
+                                      <value name="URL">
+                                        <shadow type="text" id="34VW:;l/N9v.KQ$l,8R4">
+                                          <field name="TEXT">./depa.json</field>
+                                        </shadow>
+                                      </value>
+                                      <statement name="DO">
+                                        <block type="variables_set" id="!()o~/b2j!yTt[i}NPUG">
+                                          <field name="VAR" id=";ziVG6w53qZ3(~]nPSP7">json</field>
+                                          <value name="VALUE">
+                                            <block type="readJSON" id="P-2gP%bDowlb2#k=9pdf">
+                                              <value name="TEXT">
+                                                <block type="loadedFile" id="DNO=DJ+4V~9wfM,FF`Fa"></block>
+                                              </value>
+                                            </block>
+                                          </value>
+                                          <next>
+                                            <block type="console.log" id="ptbS~vc3Y=ne^k,VVAtm">
+                                              <value name="VALUE">
+                                                <shadow type="text" id="8Z:|%CTui|PyB}$BU(N^">
+                                                  <field name="TEXT">Hello, Verge!</field>
+                                                </shadow>
+                                                <block type="variables_get" id="[7HD{/82M!BWU%HS4g$Y">
+                                                  <field name="VAR" id=";ziVG6w53qZ3(~]nPSP7">json</field>
+                                                </block>
+                                              </value>
+                                            </block>
+                                          </next>
+                                        </block>
+                                      </statement>
+                                    </block>
+                                  </statement>
+                                  <next>
+                                    <block type="controls_ifelse" id="5wl6LF?yrjKVEr8*4qYV">
+                                      <value name="IF0">
+                                        <block type="logic_compare" id="z7B,3!F+iY,B:M~ld*$d">
+                                          <field name="OP">EQ</field>
+                                          <value name="A">
+                                            <block type="callJSFunctionWithReturn" id="2{S.PQ^7gE$Z#!fSxmvH">
+                                              <mutation xmlns="http://www.w3.org/1999/xhtml" name="detectDevice"></mutation>
+                                              <field name="NAME">detectDevice</field>
+                                            </block>
+                                          </value>
+                                          <value name="B">
+                                            <block type="text" id="QF*DEMD?53)I4n07YIbf">
+                                              <field name="TEXT">movil</field>
+                                            </block>
+                                          </value>
+                                        </block>
+                                      </value>
+                                      <statement name="DO0">
+                                        <block type="console.log" id=",ah51]$Vt}TVc@*85lYZ">
+                                          <value name="VALUE">
+                                            <shadow type="text" id="sq/3)EZO#~.[V`9hMw9/">
+                                              <field name="TEXT">movil</field>
+                                            </shadow>
+                                          </value>
+                                        </block>
+                                      </statement>
+                                      <statement name="ELSE">
+                                        <block type="console.log" id="/MR1=rxS{/~6n)|OF{3^">
+                                          <value name="VALUE">
+                                            <shadow type="text" id="@`B?XsH?#8obpG5]HXd;">
+                                              <field name="TEXT">pc</field>
+                                            </shadow>
+                                          </value>
+                                        </block>
+                                      </statement>
                                     </block>
                                   </next>
                                 </block>

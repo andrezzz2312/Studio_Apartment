@@ -33,10 +33,11 @@ body {
 	right: 2%;
 	transition: ease 2s;
 }
-.showControls {
-	transform: translate3d(0, 0, 0);
-	opacity: 1;
+.showUI {
+	transform: translate3d(0, 0, 0) !important;
+	opacity: 1 !important;
 }
+
 path {
 	stroke: white;
 	stroke-width: 0.5px;
@@ -49,7 +50,7 @@ path {
 }
 #v3d-container {
 	position: relative;
-
+	overflow: hidden;
 	width: 100vw;
 	height: 100vh;
 	/* z-index: -1; */
@@ -214,6 +215,8 @@ path {
 /* Change the background color of the dropdown button when the dropdown content is shown */
 
 .contenedor_personalizar {
+	opacity: 0;
+	transform: translate3d(-130%, 0, 0);
 	display: flex;
 	flex-direction: column;
 	width: max-content;
@@ -230,7 +233,7 @@ path {
 	border: 1px solid rgba(255, 255, 255, 0.18);
 	overflow: hidden;
 	max-height: 2rem;
-	transition: max-height 0.5s ease-in-out;
+	transition: max-height 0.5s ease-in-out, transform 1s ease;
 	z-index: 150;
 }
 .movement {
@@ -243,6 +246,7 @@ path {
 	grid-template-columns: 1fr 1fr;
 	gap: 1rem;
 	justify-self: stretch;
+	align-items: center;
 }
 .rightC {
 	display: flex;
@@ -257,8 +261,18 @@ path {
 #A,
 #S,
 #D {
-	width: 3rem;
+	/* width: 3rem; */
+	width: calc(30px + (57 - 30) * ((100vw - 320px) / (1440 - 320)));
 	animation: grow 1s ease infinite alternate;
+}
+#rightC {
+	width: calc(30px + (57 - 30) * ((100vw - 320px) / (1440 - 320)));
+}
+#walk {
+	width: calc(30px + (52 - 30) * ((100vw - 320px) / (1440 - 320)));
+}
+#eye {
+	width: calc(35px + (55 - 35) * ((100vw - 320px) / (1440 - 320)));
 }
 
 #A {
@@ -380,7 +394,6 @@ path {
 .welcome {
 	z-index: 200;
 	padding: 2rem;
-
 	color: #696968;
 	background: rgba(255, 255, 255, 0.65);
 	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -392,7 +405,6 @@ path {
 	opacity: 0;
 	border-radius: 1rem;
 	text-align: center;
-
 	transition: all 1s ease-in-out;
 }
 .welcomeContainer {
@@ -455,6 +467,11 @@ path {
 		top: auto;
 		bottom: 5%;
 		right: 5%;
+	}
+}
+@media only screen and (max-width: 420px) {
+	.welcome {
+		width: 70%;
 	}
 }
 

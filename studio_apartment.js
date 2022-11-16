@@ -252,16 +252,31 @@ window.addEventListener('load', function () {
 		}
 	}
 
+	function changeTitle(labelText, subLabelText) {
+		const label = document.querySelector('.label')
+		const subLabel = document.querySelector('.subLabel')
+
+		label.textContent = labelText
+		subLabel.textContent = subLabelText
+	}
+
+	function detectDevice() {
+		if (
+			/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+				navigator.userAgent
+			)
+		) {
+			return 'movil'
+		} else {
+			return 'pc'
+		}
+	}
+
 	function prepareExternalInterface(app) {
 		app.ExternalInterface.showTitle = showTitle
 		app.ExternalInterface.vanishTitle = vanishTitle
-		app.ExternalInterface.changeTitle = function (labelText, subLabelText) {
-			const label = document.querySelector('.label')
-			const subLabel = document.querySelector('.subLabel')
-
-			label.textContent = labelText
-			subLabel.textContent = subLabelText
-		}
+		app.ExternalInterface.changeTitle = changeTitle
+		app.ExternalInterface.detectDevice = detectDevice
 	}
 
 	function runCode(app) {
@@ -270,14 +285,32 @@ window.addEventListener('load', function () {
 		const okay = document.querySelector('.okayBtn')
 		const welcome = document.querySelector('.welcome')
 		const controls = document.querySelector('.controls')
+		const customize = document.querySelector('.contenedor_personalizar')
+		const w = document.querySelector('#wKey')
+		const asd = document.querySelector('#asdKey')
+		const rightC = document.querySelector('.rightC')
 		let check = false
+
 		okay.addEventListener('click', function () {
+			if (
+				/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+					navigator.userAgent
+				)
+			) {
+				controls.classList.add('showUI')
+				w.style.display = 'none'
+				asd.style.display = 'none'
+				rightC.style.display = 'none'
+			} else {
+				controls.classList.add('showUI')
+				setTimeout(() => {
+					controls.classList.remove('showControls')
+				}, 15000)
+			}
 			welcome.classList.add('vanish')
 			okay.style.pointerEvents = 'none'
-			controls.classList.add('showControls')
-			setTimeout(() => {
-				controls.classList.remove('showControls')
-			}, 15000)
+			customize.classList.add('showUI')
+
 			document.addEventListener('keydown', keyDownTextField, false)
 
 			function keyDownTextField(e) {
