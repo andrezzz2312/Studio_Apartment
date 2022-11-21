@@ -29,6 +29,7 @@ body {
 	opacity: 0;
 	transform: translate3d(130%, 0, 0);
 	position: absolute;
+	gap: 1rem;
 	bottom: 2%;
 	right: 2%;
 	transition: ease 2s;
@@ -36,6 +37,37 @@ body {
 .showUI {
 	transform: translate3d(0, 0, 0) !important;
 	opacity: 1 !important;
+}
+#pointerDiv {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	/* width: calc(60px + (57 - 60) * ((100vw - 320px) / (1440 - 320))); */
+}
+#pointDiv {
+	display: flex;
+	justify-content: flex-end;
+	justify-self: stretch;
+	align-items: flex-end;
+	/* width: calc(60px + (57 - 60) * ((100vw - 320px) / (1440 - 320))); */
+}
+.hand {
+	transform-origin: center;
+	animation: hand 0.75s ease infinite alternate;
+}
+.bar {
+	stroke: none;
+	transform-origin: center;
+	animation: bars 1.5s ease infinite;
+}
+#pointer {
+	overflow: visible;
+	width: calc(30px + (57 - 30) * ((100vw - 320px) / (1440 - 320)));
+}
+
+#point {
+	animation: point 1.5s ease infinite alternate;
+	width: calc(22px + (47 - 22) * ((100vw - 320px) / (1440 - 320)));
 }
 
 path {
@@ -237,16 +269,17 @@ path {
 	z-index: 150;
 }
 .movement {
-	display: flex;
-	flex-direction: row;
+	display: grid;
+	grid-template-columns: 1fr 2fr;
 	gap: 1rem;
+	justify-self: stretch;
 }
 .camera {
 	display: grid;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: 1fr 2fr;
 	gap: 1rem;
 	justify-self: stretch;
-	align-items: center;
+	/* align-items: center; */
 }
 .rightC {
 	display: flex;
@@ -261,7 +294,6 @@ path {
 #A,
 #S,
 #D {
-	/* width: 3rem; */
 	width: calc(30px + (57 - 30) * ((100vw - 320px) / (1440 - 320)));
 	animation: grow 1s ease infinite alternate;
 }
@@ -270,6 +302,9 @@ path {
 }
 #walk {
 	width: calc(30px + (52 - 30) * ((100vw - 320px) / (1440 - 320)));
+}
+.eye {
+	width: min-content;
 }
 #eye {
 	width: calc(35px + (55 - 35) * ((100vw - 320px) / (1440 - 320)));
@@ -416,7 +451,7 @@ path {
 	height: 100vh;
 	left: 0;
 	top: 0;
-	pointer-events: none;
+	/* pointer-events: none; */
 }
 .label {
 	transition: all 1s;
@@ -483,6 +518,14 @@ path {
 		transform: translateX(-65%);
 	}
 }
+@keyframes point {
+	from {
+		transform: translateX(-15%) rotate(25deg);
+	}
+	to {
+		transform: translateX(-135%) rotate(-25deg);
+	}
+}
 
 @keyframes grow {
 	from {
@@ -490,5 +533,26 @@ path {
 	}
 	to {
 		transform: scale(105%);
+	}
+}
+@keyframes bars {
+	0% {
+		transform: scale(0%);
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		transform: scale(120%);
+		opacity: 0;
+	}
+}
+@keyframes hand {
+	0% {
+		transform: scale(100%);
+	}
+	100% {
+		transform: scale(80%);
 	}
 }
