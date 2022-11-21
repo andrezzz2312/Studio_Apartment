@@ -284,29 +284,35 @@ window.addEventListener('load', function () {
 		const arrow = document.querySelector('#arrow')
 		const okay = document.querySelector('.okayBtn')
 		const welcome = document.querySelector('.welcome')
+		const welcomeContainer = document.querySelector('.welcomeContainer')
 		const controls = document.querySelector('.controls')
 		const customize = document.querySelector('.contenedor_personalizar')
-		const w = document.querySelector('#wKey')
-		const asd = document.querySelector('#asdKey')
+		const wasd = document.querySelector('.wasd')
+
+		const pointDiv = document.querySelector('#pointDiv')
+		const pointerDiv = document.querySelector('#pointerDiv')
 		const rightC = document.querySelector('.rightC')
 		let check = false
 
 		okay.addEventListener('click', function () {
+			welcomeContainer.style.pointerEvents = 'none'
 			if (
 				/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
 					navigator.userAgent
 				)
 			) {
 				controls.classList.add('showUI')
-				w.style.display = 'none'
-				asd.style.display = 'none'
+				wasd.style.display = 'none'
+
 				rightC.style.display = 'none'
+				pointDiv.style.display = 'flex'
+				pointerDiv.style.display = 'flex'
 			} else {
 				controls.classList.add('showUI')
-				setTimeout(() => {
-					controls.classList.remove('showControls')
-				}, 15000)
 			}
+			setTimeout(() => {
+				controls.classList.remove('showControls')
+			}, 15000)
 			welcome.classList.add('vanish')
 			okay.style.pointerEvents = 'none'
 			customize.classList.add('showUI')
