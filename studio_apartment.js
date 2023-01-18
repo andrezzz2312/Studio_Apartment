@@ -311,7 +311,7 @@ window.addEventListener('load', function () {
 				controls.classList.add('showUI')
 			}
 			setTimeout(() => {
-				controls.classList.remove('showControls')
+				controls.classList.remove('showUI')
 			}, 15000)
 			welcome.classList.add('vanish')
 			okay.style.pointerEvents = 'none'
@@ -323,7 +323,7 @@ window.addEventListener('load', function () {
 				var keyCode = e.keyCode
 				if (keyCode == 'w' || 'a' || 's' || 'd') {
 					setTimeout(() => {
-						controls.classList.remove('showControls')
+						controls.classList.remove('showUI')
 					}, 5000)
 				}
 			}

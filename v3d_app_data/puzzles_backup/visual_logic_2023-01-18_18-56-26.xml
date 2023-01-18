@@ -1,5 +1,5 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <tab name="init" type="InitTab" active="false" scrollx="938.9999999999993" scrolly="261.0000000000001" scale="0.9">
+  <tab name="init" type="InitTab" active="false" scrollx="938.9999999999993" scrolly="261" scale="0.9">
     <block xmlns="https://developers.google.com/blockly/xml" type="initSettings" id="D0}}rrO,T:,A|~!RC7c;" x="-930" y="-290">
       <field name="LOAD_COMP_ASSETS">TRUE</field>
       <field name="FULLSCREEN">TRUE</field>
@@ -8,7 +8,7 @@
       <field name="FADE_ANNOTATIONS">TRUE</field>
     </block>
   </tab>
-  <tab name="main" type="MainTab" active="true" scrollx="1738.6029795490294" scrolly="8.934104206681695" scale="0.6768393620286863">
+  <tab name="main" type="MainTab" active="true" scrollx="2354.641851366934" scrolly="-187.95070565168135" scale="0.822702474791881">
     <variables xmlns="https://developers.google.com/blockly/xml">
       <variable id="9?_Qmgf^gPK-^TG|c:YS">sofa</variable>
       <variable id=":+]Hb!bafgf9$Pk6k@Za">sofaValue</variable>
@@ -17,25 +17,25 @@
       <variable id="5Bti0fMFT!dGo!1wcAao">listPosition</variable>
       <variable id="}HO~VKCiCkWZ[YeWJ0gL">shel_1</variable>
       <variable id="xBnzqVM]-7Opne{Q.N!$">shelveValue</variable>
+      <variable id="mL*,LeScZv~k?/!uI}3y">shel_2</variable>
       <variable id="1]O-/Q*K@Qxa-thh%hcM">interseccion</variable>
       <variable id="MC}.|/48i81|5RxLHl.b">moving</variable>
-      <variable id="mL*,LeScZv~k?/!uI}3y">shel_2</variable>
       <variable id="o]^Yqvigy.OC.,;^?*v7">sofaPrice</variable>
       <variable id="qP%6s|+Uid(@%6Ac,Q3l">shel_3</variable>
       <variable id="0q%tCl^(]I;8$,+vmA=|">floorPrice</variable>
+      <variable id="JN|F[r/TL/SF.]=3MQZv">piso_1</variable>
       <variable id="*~^$MPt!EA]03c=M3+S!">posicion</variable>
       <variable id="*5{xTcJ@MGtH8F6Z]t%o">recliner</variable>
-      <variable id="JN|F[r/TL/SF.]=3MQZv">piso_1</variable>
       <variable id="nUHFf#!wXMDZ%s#4N_}?">shelvePrice</variable>
-      <variable id="2u)`T]#TvqB^41gYn^6o">cameraX</variable>
       <variable id="7I;fPakqT%x2LJJWcysa">shelveClicked</variable>
       <variable id="`:|ORJl29;@bNso]Xd7C">piso_2</variable>
+      <variable id="2u)`T]#TvqB^41gYn^6o">cameraX</variable>
       <variable id="52h!^@v}EtGd*7Rq^fxk">mouseMove</variable>
-      <variable id="S;,/I4i$AkOSgsy}rgup">cameraY</variable>
       <variable id="49J-)/cL_09Vhh6?+p.E">piso_3</variable>
+      <variable id="S;,/I4i$AkOSgsy}rgup">cameraY</variable>
       <variable id="smcI7,:[kf0iey3KuT7k">sofaClicked</variable>
-      <variable id="T[NM2:8W:3e72ji}BVr5">cameraZ</variable>
       <variable id="_v9wU|{iXd8K$H7]vOBp">floorClicked</variable>
+      <variable id="T[NM2:8W:3e72ji}BVr5">cameraZ</variable>
       <variable id="f8cz=)azh@EKgQtA%n!?">rotation_recliner</variable>
       <variable id="k{cYe^`%A`]-J)*a:~mj">delete_recliner</variable>
       <variable id="UTi=eV[[]%STh|DnOe{)">info</variable>
@@ -1949,7 +1949,7 @@
         </block>
       </value>
     </block>
-    <block xmlns="https://developers.google.com/blockly/xml" type="controls_ifelse" id="5wl6LF?yrjKVEr8*4qYV" disabled="true" x="-2430" y="470">
+    <block xmlns="https://developers.google.com/blockly/xml" type="controls_ifelse" id="5wl6LF?yrjKVEr8*4qYV" x="-2430" y="470">
       <value name="IF0">
         <block type="logic_compare" id="z7B,3!F+iY,B:M~ld*$d">
           <field name="OP">EQ</field>
@@ -2052,7 +2052,7 @@
         </block>
       </statement>
       <next>
-        <block type="eventHTMLElem" id="W]=yZizIiT!F6IYSBPtT" disabled="true">
+        <block type="eventHTMLElem" id="W]=yZizIiT!F6IYSBPtT">
           <field name="EVENT">mousemove</field>
           <field name="PARENT">FALSE</field>
           <value name="ID">
@@ -2276,7 +2276,7 @@
                     </block>
                   </statement>
                   <next>
-                    <block type="Zjbcool-teleport/whenClicked2" id="EU@[C;2Uk4TB1H6bR],d" disabled="true">
+                    <block type="Zjbcool-teleport/whenClicked2" id="EU@[C;2Uk4TB1H6bR],d">
                       <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false" enableifmissed="false"></mutation>
                       <field name="X_RAY">FALSE</field>
                       <field name="DOUBLE_CLICK">FALSE</field>

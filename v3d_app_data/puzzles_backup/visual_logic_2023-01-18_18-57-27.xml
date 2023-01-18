@@ -8,7 +8,7 @@
       <field name="FADE_ANNOTATIONS">TRUE</field>
     </block>
   </tab>
-  <tab name="main" type="MainTab" active="true" scrollx="1738.6029795490294" scrolly="8.934104206681695" scale="0.6768393620286863">
+  <tab name="main" type="MainTab" active="true" scrollx="2096.3742892327427" scrolly="-722.4856023308603" scale="0.7462153966366267">
     <variables xmlns="https://developers.google.com/blockly/xml">
       <variable id="9?_Qmgf^gPK-^TG|c:YS">sofa</variable>
       <variable id=":+]Hb!bafgf9$Pk6k@Za">sofaValue</variable>
@@ -1949,7 +1949,7 @@
         </block>
       </value>
     </block>
-    <block xmlns="https://developers.google.com/blockly/xml" type="controls_ifelse" id="5wl6LF?yrjKVEr8*4qYV" disabled="true" x="-2430" y="470">
+    <block xmlns="https://developers.google.com/blockly/xml" type="controls_ifelse" id="5wl6LF?yrjKVEr8*4qYV" x="-2430" y="470">
       <value name="IF0">
         <block type="logic_compare" id="z7B,3!F+iY,B:M~ld*$d">
           <field name="OP">EQ</field>
